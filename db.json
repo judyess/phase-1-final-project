@@ -1,0 +1,830 @@
+{
+  "elements": [
+    {
+      "number": 1,
+      "name": "Hydrogen",
+      "abbreviation": "H",
+      "atomicMass": 1.0079,
+      "id": 1
+    },
+    {
+      "number": 2,
+      "name": "Helium",
+      "abbreviation": "He",
+      "atomicMass": 4.0026,
+      "id": 2
+    },
+    {
+      "number": 3,
+      "name": "Lithium",
+      "abbreviation": "Li",
+      "atomicMass": 6.941,
+      "id": 3
+    },
+    {
+      "number": 4,
+      "name": "Beryllium",
+      "abbreviation": "Be",
+      "atomicMass": 9.0122,
+      "id": 4
+    },
+    {
+      "number": 5,
+      "name": "Boron",
+      "abbreviation": "B",
+      "atomicMass": 10.811,
+      "id": 5
+    },
+    {
+      "number": 6,
+      "name": "Carbon",
+      "abbreviation": "C",
+      "atomicMass": 12.0107,
+      "id": 6
+    },
+    {
+      "number": 7,
+      "name": "Nitrogen",
+      "abbreviation": "N",
+      "atomicMass": 14.0067,
+      "id": 7
+    },
+    {
+      "number": 8,
+      "name": "Oxygen",
+      "abbreviation": "O",
+      "atomicMass": 15.9994,
+      "id": 8
+    },
+    {
+      "number": 9,
+      "name": "Fluorine",
+      "abbreviation": "F",
+      "atomicMass": 18.9984,
+      "id": 9
+    },
+    {
+      "number": 10,
+      "name": "Neon",
+      "abbreviation": "Ne",
+      "atomicMass": 20.1797,
+      "id": 10
+    },
+    {
+      "number": 11,
+      "name": "Sodium",
+      "abbreviation": "Na",
+      "atomicMass": 22.9897,
+      "id": 11
+    },
+    {
+      "number": 12,
+      "name": "Magnesium",
+      "abbreviation": "Mg",
+      "atomicMass": 24.305,
+      "id": 12
+    },
+    {
+      "number": 13,
+      "name": "Aluminum",
+      "abbreviation": "Al",
+      "atomicMass": 26.9815,
+      "id": 13
+    },
+    {
+      "number": 14,
+      "name": "Silicon",
+      "abbreviation": "Si",
+      "atomicMass": 28.0855,
+      "id": 14
+    },
+    {
+      "number": 15,
+      "name": "Phosphorus",
+      "abbreviation": "P",
+      "atomicMass": 30.9738,
+      "id": 15
+    },
+    {
+      "number": 16,
+      "name": "Sulfur",
+      "abbreviation": "S",
+      "atomicMass": 32.065,
+      "id": 16
+    },
+    {
+      "number": 17,
+      "name": "Chlorine",
+      "abbreviation": "Cl",
+      "atomicMass": 35.453,
+      "id": 17
+    },
+    {
+      "number": 18,
+      "name": "Argon",
+      "abbreviation": "Ar",
+      "atomicMass": 39.948,
+      "id": 18
+    },
+    {
+      "number": 19,
+      "name": "Potassium",
+      "abbreviation": "K",
+      "atomicMass": 39.0983,
+      "id": 19
+    },
+    {
+      "number": 20,
+      "name": "Calcium",
+      "abbreviation": "Ca",
+      "atomicMass": 40.078,
+      "id": 20
+    },
+    {
+      "number": 21,
+      "name": "Scandium",
+      "abbreviation": "Sc",
+      "atomicMass": 44.9559,
+      "id": 21
+    },
+    {
+      "number": 22,
+      "name": "Titanium",
+      "abbreviation": "Ti",
+      "atomicMass": 47.867,
+      "id": 22
+    },
+    {
+      "number": 23,
+      "name": "Vanadium",
+      "abbreviation": "V",
+      "atomicMass": 50.9415,
+      "id": 23
+    },
+    {
+      "number": 24,
+      "name": "Chromium",
+      "abbreviation": "Cr",
+      "atomicMass": 51.9961,
+      "id": 24
+    },
+    {
+      "number": 25,
+      "name": "Manganese",
+      "abbreviation": "Mn",
+      "atomicMass": 54.938,
+      "id": 25
+    },
+    {
+      "number": 26,
+      "name": "Iron",
+      "abbreviation": "Fe",
+      "atomicMass": 55.845,
+      "id": 26
+    },
+    {
+      "number": 27,
+      "name": "Nickel",
+      "abbreviation": "Ni",
+      "atomicMass": 58.6934,
+      "id": 27
+    },
+    {
+      "number": 28,
+      "name": "Cobalt",
+      "abbreviation": "Co",
+      "atomicMass": 58.9332,
+      "id": 28
+    },
+    {
+      "number": 29,
+      "name": "Copper",
+      "abbreviation": "Cu",
+      "atomicMass": 63.546,
+      "id": 29
+    },
+    {
+      "number": 30,
+      "name": "Zinc",
+      "abbreviation": "Zn",
+      "atomicMass": 65.39,
+      "id": 30
+    },
+    {
+      "number": 31,
+      "name": "Gallium",
+      "abbreviation": "Ga",
+      "atomicMass": 69.723,
+      "id": 31
+    },
+    {
+      "number": 32,
+      "name": "Germanium",
+      "abbreviation": "Ge",
+      "atomicMass": 72.64,
+      "id": 32
+    },
+    {
+      "number": 33,
+      "name": "Arsenic",
+      "abbreviation": "As",
+      "atomicMass": 74.9216,
+      "id": 33
+    },
+    {
+      "number": 34,
+      "name": "Selenium",
+      "abbreviation": "Se",
+      "atomicMass": 78.96,
+      "id": 34
+    },
+    {
+      "number": 35,
+      "name": "Bromine",
+      "abbreviation": "Br",
+      "atomicMass": 79.904,
+      "id": 35
+    },
+    {
+      "number": 36,
+      "name": "Krypton",
+      "abbreviation": "Kr",
+      "atomicMass": 83.8,
+      "id": 36
+    },
+    {
+      "number": 37,
+      "name": "Rubidium",
+      "abbreviation": "Rb",
+      "atomicMass": 85.4678,
+      "id": 37
+    },
+    {
+      "number": 38,
+      "name": "Strontium",
+      "abbreviation": "Sr",
+      "atomicMass": 87.62,
+      "id": 38
+    },
+    {
+      "number": 39,
+      "name": "Yttrium",
+      "abbreviation": "Y",
+      "atomicMass": 88.9059,
+      "id": 39
+    },
+    {
+      "number": 40,
+      "name": "Zirconium",
+      "abbreviation": "Zr",
+      "atomicMass": 91.224,
+      "id": 40
+    },
+    {
+      "number": 41,
+      "name": "Niobium",
+      "abbreviation": "Nb",
+      "atomicMass": 92.9064,
+      "id": 41
+    },
+    {
+      "number": 42,
+      "name": "Molybdenum",
+      "abbreviation": "Mo",
+      "atomicMass": 95.94,
+      "id": 42
+    },
+    {
+      "number": 43,
+      "name": "Technetium",
+      "abbreviation": "Tc",
+      "atomicMass": 98,
+      "id": 43
+    },
+    {
+      "number": 44,
+      "name": "Ruthenium",
+      "abbreviation": "Ru",
+      "atomicMass": 101.07,
+      "id": 44
+    },
+    {
+      "number": 45,
+      "name": "Rhodium",
+      "abbreviation": "Rh",
+      "atomicMass": 102.9055,
+      "id": 45
+    },
+    {
+      "number": 46,
+      "name": "Palladium",
+      "abbreviation": "Pd",
+      "atomicMass": 106.42,
+      "id": 46
+    },
+    {
+      "number": 47,
+      "name": "Silver",
+      "abbreviation": "Ag",
+      "atomicMass": 107.8682,
+      "id": 47
+    },
+    {
+      "number": 48,
+      "name": "Cadmium",
+      "abbreviation": "Cd",
+      "atomicMass": 112.411,
+      "id": 48
+    },
+    {
+      "number": 49,
+      "name": "Indium",
+      "abbreviation": "In",
+      "atomicMass": 114.818,
+      "id": 49
+    },
+    {
+      "number": 50,
+      "name": "Tin",
+      "abbreviation": "Sn",
+      "atomicMass": 118.71,
+      "id": 50
+    },
+    {
+      "number": 51,
+      "name": "Antimony",
+      "abbreviation": "Sb",
+      "atomicMass": 121.76,
+      "id": 51
+    },
+    {
+      "number": 52,
+      "name": "Tellurium",
+      "abbreviation": "Te",
+      "atomicMass": 127.6,
+      "id": 52
+    },
+    {
+      "number": 53,
+      "name": "Iodine",
+      "abbreviation": "I",
+      "atomicMass": 126.9045,
+      "id": 53
+    },
+    {
+      "number": 54,
+      "name": "Xenon",
+      "abbreviation": "Xe",
+      "atomicMass": 131.293,
+      "id": 54
+    },
+    {
+      "number": 55,
+      "name": "Cesium",
+      "abbreviation": "Cs",
+      "atomicMass": 132.9055,
+      "id": 55
+    },
+    {
+      "number": 56,
+      "name": "Barium",
+      "abbreviation": "Ba",
+      "atomicMass": 137.327,
+      "id": 56
+    },
+    {
+      "number": 57,
+      "name": "Lanthanum",
+      "abbreviation": "La",
+      "atomicMass": 138.9055,
+      "id": 57
+    },
+    {
+      "number": 58,
+      "name": "Cerium",
+      "abbreviation": "Ce",
+      "atomicMass": 140.116,
+      "id": 58
+    },
+    {
+      "number": 59,
+      "name": "Praseodymium",
+      "abbreviation": "Pr",
+      "atomicMass": 140.9077,
+      "id": 59
+    },
+    {
+      "number": 60,
+      "name": "Neodymium",
+      "abbreviation": "Nd",
+      "atomicMass": 144.24,
+      "id": 60
+    },
+    {
+      "number": 61,
+      "name": "Promethium",
+      "abbreviation": "Pm",
+      "atomicMass": 145,
+      "id": 61
+    },
+    {
+      "number": 62,
+      "name": "Samarium",
+      "abbreviation": "Sm",
+      "atomicMass": 150.36,
+      "id": 62
+    },
+    {
+      "number": 63,
+      "name": "Europium",
+      "abbreviation": "Eu",
+      "atomicMass": 151.964,
+      "id": 63
+    },
+    {
+      "number": 64,
+      "name": "Gadolinium",
+      "abbreviation": "Gd",
+      "atomicMass": 157.25,
+      "id": 64
+    },
+    {
+      "number": 65,
+      "name": "Terbium",
+      "abbreviation": "Tb",
+      "atomicMass": 158.9253,
+      "id": 65
+    },
+    {
+      "number": 66,
+      "name": "Dysprosium",
+      "abbreviation": "Dy",
+      "atomicMass": 162.5,
+      "id": 66
+    },
+    {
+      "number": 67,
+      "name": "Holmium",
+      "abbreviation": "Ho",
+      "atomicMass": 164.9303,
+      "id": 67
+    },
+    {
+      "number": 68,
+      "name": "Erbium",
+      "abbreviation": "Er",
+      "atomicMass": 167.259,
+      "id": 68
+    },
+    {
+      "number": 69,
+      "name": "Thulium",
+      "abbreviation": "Tm",
+      "atomicMass": 168.9342,
+      "id": 69
+    },
+    {
+      "number": 70,
+      "name": "Ytterbium",
+      "abbreviation": "Yb",
+      "atomicMass": 173.04,
+      "id": 70
+    },
+    {
+      "number": 71,
+      "name": "Lutetium",
+      "abbreviation": "Lu",
+      "atomicMass": 174.967,
+      "id": 71
+    },
+    {
+      "number": 72,
+      "name": "Hafnium",
+      "abbreviation": "Hf",
+      "atomicMass": 178.49,
+      "id": 72
+    },
+    {
+      "number": 73,
+      "name": "Tantalum",
+      "abbreviation": "Ta",
+      "atomicMass": 180.9479,
+      "id": 73
+    },
+    {
+      "number": 74,
+      "name": "Tungsten",
+      "abbreviation": "W",
+      "atomicMass": 183.84,
+      "id": 74
+    },
+    {
+      "number": 75,
+      "name": "Rhenium",
+      "abbreviation": "Re",
+      "atomicMass": 186.207,
+      "id": 75
+    },
+    {
+      "number": 76,
+      "name": "Osmium",
+      "abbreviation": "Os",
+      "atomicMass": 190.23,
+      "id": 76
+    },
+    {
+      "number": 77,
+      "name": "Iridium",
+      "abbreviation": "Ir",
+      "atomicMass": 192.217,
+      "id": 77
+    },
+    {
+      "number": 78,
+      "name": "Platinum",
+      "abbreviation": "Pt",
+      "atomicMass": 195.078,
+      "id": 78
+    },
+    {
+      "number": 79,
+      "name": "Gold",
+      "abbreviation": "Au",
+      "atomicMass": 196.9665,
+      "id": 79
+    },
+    {
+      "number": 80,
+      "name": "Mercury",
+      "abbreviation": "Hg",
+      "atomicMass": 200.59,
+      "id": 80
+    },
+    {
+      "number": 81,
+      "name": "Thallium",
+      "abbreviation": "Tl",
+      "atomicMass": 204.3833,
+      "id": 81
+    },
+    {
+      "number": 82,
+      "name": "Lead",
+      "abbreviation": "Pb",
+      "atomicMass": 207.2,
+      "id": 82
+    },
+    {
+      "number": 83,
+      "name": "Bismuth",
+      "abbreviation": "Bi",
+      "atomicMass": 208.9804,
+      "id": 83
+    },
+    {
+      "number": 84,
+      "name": "Polonium",
+      "abbreviation": "Po",
+      "atomicMass": 209,
+      "id": 84
+    },
+    {
+      "number": 85,
+      "name": "Astatine",
+      "abbreviation": "At",
+      "atomicMass": 210,
+      "id": 85
+    },
+    {
+      "number": 86,
+      "name": "Radon",
+      "abbreviation": "Rn",
+      "atomicMass": 222,
+      "id": 86
+    },
+    {
+      "number": 87,
+      "name": "Francium",
+      "abbreviation": "Fr",
+      "atomicMass": 223,
+      "id": 87
+    },
+    {
+      "number": 88,
+      "name": "Radium",
+      "abbreviation": "Ra",
+      "atomicMass": 226,
+      "id": 88
+    },
+    {
+      "number": 89,
+      "name": "Actinium",
+      "abbreviation": "Ac",
+      "atomicMass": 227,
+      "id": 89
+    },
+    {
+      "number": 90,
+      "name": "Thorium",
+      "abbreviation": "Th",
+      "atomicMass": 232.0381,
+      "id": 90
+    },
+    {
+      "number": 91,
+      "name": "Protactinium",
+      "abbreviation": "Pa",
+      "atomicMass": 231.0359,
+      "id": 91
+    },
+    {
+      "number": 92,
+      "name": "Uranium",
+      "abbreviation": "U",
+      "atomicMass": 238.0289,
+      "id": 92
+    },
+    {
+      "number": 93,
+      "name": "Neptunium",
+      "abbreviation": "Np",
+      "atomicMass": 237,
+      "id": 93
+    },
+    {
+      "number": 94,
+      "name": "Plutonium",
+      "abbreviation": "Pu",
+      "atomicMass": 244,
+      "id": 94
+    },
+    {
+      "number": 95,
+      "name": "Americium",
+      "abbreviation": "Am",
+      "atomicMass": 243,
+      "id": 95
+    },
+    {
+      "number": 96,
+      "name": "Curium",
+      "abbreviation": "Cm",
+      "atomicMass": 247,
+      "id": 96
+    },
+    {
+      "number": 97,
+      "name": "Berkelium",
+      "abbreviation": "Bk",
+      "atomicMass": 247,
+      "id": 97
+    },
+    {
+      "number": 98,
+      "name": "Californium",
+      "abbreviation": "Cf",
+      "atomicMass": 251,
+      "id": 98
+    },
+    {
+      "number": 99,
+      "name": "Einsteinium",
+      "abbreviation": "Es",
+      "atomicMass": 252,
+      "id": 99
+    },
+    {
+      "number": 100,
+      "name": "Fermium",
+      "abbreviation": "Fm",
+      "atomicMass": 257,
+      "id": 100
+    },
+    {
+      "number": 101,
+      "name": "Mendelevium",
+      "abbreviation": "Md",
+      "atomicMass": 258,
+      "id": 101
+    },
+    {
+      "number": 102,
+      "name": "Nobelium",
+      "abbreviation": "No",
+      "atomicMass": 259,
+      "id": 102
+    },
+    {
+      "number": 103,
+      "name": "Lawrencium",
+      "abbreviation": "Lr",
+      "atomicMass": 262,
+      "id": 103
+    },
+    {
+      "number": 104,
+      "name": "Rutherfordium",
+      "abbreviation": "Rf",
+      "atomicMass": 261,
+      "id": 104
+    },
+    {
+      "number": 105,
+      "name": "Dubnium",
+      "abbreviation": "Db",
+      "atomicMass": 262,
+      "id": 105
+    },
+    {
+      "number": 106,
+      "name": "Seaborgium",
+      "abbreviation": "Sg",
+      "atomicMass": 266,
+      "id": 106
+    },
+    {
+      "number": 107,
+      "name": "Bohrium",
+      "abbreviation": "Bh",
+      "atomicMass": 264,
+      "id": 107
+    },
+    {
+      "number": 108,
+      "name": "Hassium",
+      "abbreviation": "Hs",
+      "atomicMass": 277,
+      "id": 108
+    },
+    {
+      "number": 109,
+      "name": "Meitnerium",
+      "abbreviation": "Mt",
+      "atomicMass": 268,
+      "id": 109
+    },
+    {
+      "number": 110,
+      "name": "Darmstadtium",
+      "abbreviation": "Ds",
+      "atomicMass": "NULL",
+      "id": 110
+    },
+    {
+      "number": 111,
+      "name": "Roentgenium",
+      "abbreviation": "Rg",
+      "atomicMass": 272,
+      "id": 111
+    },
+    {
+      "number": 112,
+      "name": "Ununbium",
+      "abbreviation": "Uub",
+      "atomicMass": "NULL",
+      "id": 112
+    },
+    {
+      "number": 113,
+      "name": "Ununtrium",
+      "abbreviation": "Uut",
+      "atomicMass": "NULL",
+      "id": 113
+    },
+    {
+      "number": 114,
+      "name": "Ununquadium",
+      "abbreviation": "Uuq",
+      "atomicMass": "NULL",
+      "id": 114
+    },
+    {
+      "number": 115,
+      "name": "Ununpentium",
+      "abbreviation": "Uup",
+      "atomicMass": "NULL",
+      "id": 115
+    },
+    {
+      "number": 116,
+      "name": "Ununhexium",
+      "abbreviation": "Uuh",
+      "atomicMass": "NULL",
+      "id": 116
+    },
+    {
+      "number": 117,
+      "name": "Ununseptium",
+      "abbreviation": "Uus",
+      "atomicMass": "NULL",
+      "id": 117
+    },
+    {
+      "number": 118,
+      "name": "Ununoctium",
+      "abbreviation": "Uuo",
+      "atomicMass": "NULL",
+      "id": 118
+    }
+  ]
+}

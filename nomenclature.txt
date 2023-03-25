@@ -1,0 +1,33 @@
+
+Nomeclature for simple compounds.
+"Binary compounds" are compounds that have only 2 elements.
+
+(!)Considerations:
+Is the compound ionic or molecular?
+    if ionic, does the metal form ions of one type (has fixed charge)
+        or does the metal form more than one type (variable chare).
+    are the ions monoatomic or polyatomic?
+
+    if molecular, does it contain hydrogen? 
+        if it contains hydrogen, does it also contain oxygen?
+
+
+If the compound has metal and nonmetal elements, the first element is the metal followed by the nonmetal. Metals are named first and its name is unchanged.
+
+(!)Rules:
+To organize all the rules, I need to know what categories exist for compounds.
+
+
+(category: Binary Covalent Bonds)
+1. The general rule in deciding what element is named first is:
+The element with the lower group number is written first. 
+Except when the compound contains oxygen and a halogen, the name of the halogen goes first.
+
+
+
+(category: Only has Monoatomic ions)
+1. If the compound is binary with monoatomic ions, the compound name is:
+    cation name (name of first element, which should be metal) + anion name (name of nonmetallic element) with its ending replaced by the suffix "-ide"
+
+
+(category: Has Polyatomic ions)

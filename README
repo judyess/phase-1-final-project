@@ -1,0 +1,53 @@
+TO DO:
+
+3. in tables.html, I havn't connected the html forms to anything yet. Drop down box will determine what the user is searching for in the textbox, so I only have to have one text box, instead of many.
+
+4. Look up how uniform the nomenclature for chemical formulas is so I can decide if I want to write a function to parse chemical equations. Not sure what to do with coefficients and subscripts though. 
+
+5. Go find the lab that listed dog breeds that changed text color when clicked, for making the table entries clickable. I think its "phase-1-practice-dog-ceo"
+
+-----DONE----
+
+1. populate db.json file with elemental data
+    write a function to post data. Call that function on all the data from elements.txt
+
+2. go back and remember how to make an html form, access the form data using javascript, how to organize my html so I can easily style it with CSS. 
+
+
+-------------- 
+I can write a program to suggest what the name of a chemical compound might be based on standard naming rules. For this I would need to have the first stem of an elements name, and from the coefficients or subscripts and from properties about the compound and how they interact, determine how that affects the prefixes and suffixes.
+ex. The first element in a compound usually keeps its name, 
+example, CO2, The first word is "Carbon", 
+The second will be = number of O molecules, 2 so, "di-", + Oxygen stem,"ox-" + suffix, "-ide".
+so CO2 = "Carbon Dioxide".
+(BUT) how is the suffix,"-ide" determined? How do I know if something is an acid? 
+Do different elemental interactions affect the nomenclature?
+
+Nomeclature for simple compounds.
+Binary compounds are compounds that have only 2 elements.
+
+I need to be able to determine ionic, molecular, polyatomic ions, acids, organic or inorganic compounds (aka, if carbon is the principle element or not)
+these nomenclature guidelines have been proposed by IUPAC:
+Things to think about about how to categorize compounds when naming them:
+
+Is the compound ionic or molecular?
+    if ionic, does the metal form ions of one type (has fixed charge)
+        or does the metal form more than one type (variable chare).
+    are the ions monoatomic or polyatomic?
+
+    if molecular, does it contain hydrogen? 
+        if it contains hydrogen, does it also contain oxygen?
+
+If the compound is binary with monoatomic ions, the compound name is:
+    cation name (name of first element, which should be metal) + anion name (name of nonmetallic element) with its ending replaced by the suffix "-ide"
+
+If the compound has metal and nonmetal elements, the first element is the metal followed by the nonmetal. Metals are named first and its name is unchanged.
+
+
+
+
+
+--------------
+
+INSTRUCTIONS:
+in terminal, start the json server >> json-server --watch db.json

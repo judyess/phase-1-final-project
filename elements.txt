@@ -1,0 +1,313 @@
+Note: after I write a function to add this to my .db file, use "replace" to replace the sql commands
+
+
+submitData(1, 'Hydrogen', 'H', 1.0079);
+submitData(2, 'Helium', 'He', 4.0026);
+submitData(3, 'Lithium', 'Li', 6.941);
+submitData(4, 'Beryllium', 'Be', 9.0122);
+submitData(5, 'Boron', 'B', 10.811);
+submitData(6, 'Carbon', 'C', 12.0107);
+submitData(7, 'Nitrogen', 'N', 14.0067);
+submitData(8, 'Oxygen', 'O', 15.9994);
+submitData(9, 'Fluorine', 'F', 18.9984);
+submitData(10, 'Neon', 'Ne', 20.1797);
+submitData(11, 'Sodium', 'Na', 22.9897);
+submitData(12, 'Magnesium', 'Mg', 24.305);
+submitData(13, 'Aluminum', 'Al', 26.9815);
+submitData(14, 'Silicon', 'Si', 28.0855);
+submitData(15, 'Phosphorus', 'P', 30.9738);
+submitData(16, 'Sulfur', 'S', 32.065);
+submitData(17, 'Chlorine', 'Cl', 35.453);
+submitData(18, 'Argon', 'Ar', 39.948);
+submitData(19, 'Potassium', 'K', 39.0983);
+submitData(20, 'Calcium', 'Ca', 40.078);
+submitData(21, 'Scandium', 'Sc', 44.9559);
+submitData(22, 'Titanium', 'Ti', 47.867);
+submitData(23, 'Vanadium', 'V', 50.9415);
+submitData(24, 'Chromium', 'Cr', 51.9961);
+submitData(25, 'Manganese', 'Mn', 54.938);
+submitData(26, 'Iron', 'Fe', 55.845);
+submitData(27, 'Nickel', 'Ni', 58.6934);
+submitData(28, 'Cobalt', 'Co', 58.9332);
+submitData(29, 'Copper', 'Cu', 63.546);
+submitData(30, 'Zinc', 'Zn', 65.39);
+submitData(31, 'Gallium', 'Ga', 69.723);
+submitData(32, 'Germanium', 'Ge', 72.64);
+submitData(33, 'Arsenic', 'As', 74.9216);
+submitData(34, 'Selenium', 'Se', 78.96);
+submitData(35, 'Bromine', 'Br', 79.904);
+submitData(36, 'Krypton', 'Kr', 83.8);
+submitData(37, 'Rubidium', 'Rb', 85.4678);
+submitData(38, 'Strontium', 'Sr', 87.62);
+submitData(39, 'Yttrium', 'Y', 88.9059);
+submitData(40, 'Zirconium', 'Zr', 91.224);
+submitData(41, 'Niobium', 'Nb', 92.9064);
+submitData(42, 'Molybdenum', 'Mo', 95.94);
+submitData(43, 'Technetium', 'Tc', 98);
+submitData(44, 'Ruthenium', 'Ru', 101.07);
+submitData(45, 'Rhodium', 'Rh', 102.9055);
+submitData(46, 'Palladium', 'Pd', 106.42);
+submitData(47, 'Silver', 'Ag', 107.8682);
+submitData(48, 'Cadmium', 'Cd', 112.411);
+submitData(49, 'Indium', 'In', 114.818);
+submitData(50, 'Tin', 'Sn', 118.71);
+submitData(51, 'Antimony', 'Sb', 121.76);
+submitData(52, 'Tellurium', 'Te', 127.6);
+submitData(53, 'Iodine', 'I', 126.9045);
+submitData(54, 'Xenon', 'Xe', 131.293);
+submitData(55, 'Cesium', 'Cs', 132.9055);
+submitData(56, 'Barium', 'Ba', 137.327);
+submitData(57, 'Lanthanum', 'La', 138.9055);
+submitData(58, 'Cerium', 'Ce', 140.116);
+submitData(59, 'Praseodymium', 'Pr', 140.9077);
+submitData(60, 'Neodymium', 'Nd', 144.24);
+submitData(61, 'Promethium', 'Pm', 145);
+submitData(62, 'Samarium', 'Sm', 150.36);
+submitData(63, 'Europium', 'Eu', 151.964);
+submitData(64, 'Gadolinium', 'Gd', 157.25);
+submitData(65, 'Terbium', 'Tb', 158.9253);
+submitData(66, 'Dysprosium', 'Dy', 162.5);
+submitData(67, 'Holmium', 'Ho', 164.9303);
+submitData(68, 'Erbium', 'Er', 167.259);
+submitData(69, 'Thulium', 'Tm', 168.9342);
+submitData(70, 'Ytterbium', 'Yb', 173.04);
+submitData(71, 'Lutetium', 'Lu', 174.967);
+submitData(72, 'Hafnium', 'Hf', 178.49);
+submitData(73, 'Tantalum', 'Ta', 180.9479);
+submitData(74, 'Tungsten', 'W', 183.84);
+submitData(75, 'Rhenium', 'Re', 186.207);
+submitData(76, 'Osmium', 'Os', 190.23);
+submitData(77, 'Iridium', 'Ir', 192.217);
+submitData(78, 'Platinum', 'Pt', 195.078);
+submitData(79, 'Gold', 'Au', 196.9665);
+submitData(80, 'Mercury', 'Hg', 200.59);
+submitData(81, 'Thallium', 'Tl', 204.3833);
+submitData(82, 'Lead', 'Pb', 207.2);
+submitData(83, 'Bismuth', 'Bi', 208.9804);
+submitData(84, 'Polonium', 'Po', 209);
+submitData(85, 'Astatine', 'At', 210);
+submitData(86, 'Radon', 'Rn', 222);
+submitData(87, 'Francium', 'Fr', 223);
+submitData(88, 'Radium', 'Ra', 226);
+submitData(89, 'Actinium', 'Ac', 227);
+submitData(90, 'Thorium', 'Th', 232.0381);
+submitData(91, 'Protactinium', 'Pa', 231.0359);
+submitData(92, 'Uranium', 'U', 238.0289);
+submitData(93, 'Neptunium', 'Np', 237);
+submitData(94, 'Plutonium', 'Pu', 244);
+submitData(95, 'Americium', 'Am', 243);
+submitData(96, 'Curium', 'Cm', 247);
+submitData(97, 'Berkelium', 'Bk', 247);
+submitData(98, 'Californium', 'Cf', 251);
+submitData(99, 'Einsteinium', 'Es', 252);
+submitData(100, 'Fermium', 'Fm', 257);
+submitData(101, 'Mendelevium', 'Md', 258);
+submitData(102, 'Nobelium', 'No', 259);
+submitData(103, 'Lawrencium', 'Lr', 262);
+submitData(104, 'Rutherfordium', 'Rf', 261);
+submitData(105, 'Dubnium', 'Db', 262);
+submitData(106, 'Seaborgium', 'Sg', 266);
+submitData(107, 'Bohrium', 'Bh', 264);
+submitData(108, 'Hassium', 'Hs', 277);
+submitData(109, 'Meitnerium', 'Mt', 268);
+submitData(110, 'Darmstadtium', 'Ds', NULL);
+submitData(111, 'Roentgenium', 'Rg', 272);
+submitData(112, 'Ununbium', 'Uub', NULL);
+submitData(113, 'Ununtrium', 'Uut', NULL);
+submitData(114, 'Ununquadium', 'Uuq', NULL);
+submitData(115, 'Ununpentium', 'Uup', NULL);
+submitData(116, 'Ununhexium', 'Uuh', NULL);
+submitData(117, 'Ununseptium', 'Uus', NULL);
+submitData(118, 'Ununoctium', 'Uuo', NULL);
+
+
+
+// the sub arrays in the groups are the from the two rows at the bottom of the table.
+
+group1 = [
+    1, 3, 11, 19, 37, 55, 87
+]
+group2 = [
+    4, 12, 20, 38, 56, 88
+]
+group3 = [
+    21, 39
+]
+group4 = [
+    22, 40, 72, 104, [57, 89]
+]
+group5 = [
+    23, 41, 73, 105, [58, 90]
+]
+group6 = [
+    24, 42, 74, 106, [59, 91]
+]
+group7 = [
+    25, 43, 75, 107, [60, 92]
+]
+group8 = [
+    26, 44, 76, 108, [61, 93]
+]
+group9 = [
+    27, 45, 77, 109, [62, 94]
+]
+group10 = [
+    28, 46, 78, 110, [63, 95]
+]
+group11 = [
+    29, 47, 79, 111, [64, 96]
+]
+group12 = [
+    30, 48, 80, 112, [65, 97]
+]
+group13 = [
+    5, 13, 31, 49, 81, 113, [66,98]
+]
+group14 = [
+    6, 14, 32, 50, 82, 114, [67, 99]
+]
+group15 = [
+    7, 15, 33, 51, 83, 115, [68, 100]
+]
+group16 = [
+    8, 16, 34, 52, 84, 116, [69, 101]
+]
+group17 = [
+    9, 17, 35, 53, 85, 117, [70, 102]
+]
+group18 = [
+    2, 10, 18, 36, 54, 86, 118, [71, 103]
+]
+
+
+period1 = [
+    1, 2
+]
+period2 = [
+    3 through 10
+]
+period3 = [
+    11 through 18
+]
+period4 = [
+    19 through 36
+]
+period5 = [
+    37 through 54
+]
+period6 = [
+    55, 56 and 72 through 86
+]
+period7 = [
+    87, 88 and 104 through 118
+]
+
+period-Lanthanides = [
+    57 through 71
+]
+
+period-Actinides = [
+    89 through 103
+]
+
+
+
+
+
+/* NEED TO DO MORE RESEARCH
+
+The elemental groups are different depending on whose guidelines are being referenced.
+Sometimes group12 is apart of transition metals, sometimes its apart of post transition metals,
+Po(84) is sometimes apart of semimetals, or basic metals, or transition metals, and even nonmetals
+
+Have to organize the different main family groups, 
+and what subgroups they have, and make a list of the few elements 
+that either exist across many groups, or are commonly placed in different groups
+based on the whose guidelines are being followed.
+Map the groups.
+
+*/
+
+
+metals = [
+
+    3, 4, 11, 12, 13, 
+    19 through 31, 
+    37 through 50, 
+    55, 56, 
+    72 through 84, 
+    87, 88, 
+    104 through 117
+
+    alkali = [
+        3, 11, 19, 37, 55, 87
+    ]                       // group1 minus Hydrogen, 1
+    alkalineEarth = [
+        all of group 2
+    ]
+
+    transition = [
+        21 through 29,   
+        39 through 47,   
+        72 through 79,   
+        104 through 108, 
+
+        rareEarth = [
+            21, 39, 57 through 71
+        ]                   
+
+    postTransition = [
+        13,             
+        30, 31,
+        48 through 50,
+        80 through 84,
+        112
+    ]       // sometimes group 12, the zinc group is in transition metals or post-transition metals. 
+        
+    ]
+
+    basicMetal = [
+        13, 31, 32, 
+        49 through 51,
+        81 through 84,      // sometimes 84 is in metalloids, or posttransition metals, or semimetal 
+        113 through 116
+    ]
+]
+
+nonmetals = [
+
+    1, 2,               // sometimes He, 2, is listed under nonmetals or Noble gases
+    6 through 10, 
+    15 through 18,
+    34 through 36, 
+    53, 54, 
+    86, 118             // 118 is sometimes labeled as having unknown elemental properties and has no group
+
+    basicNonmetal =[
+        /*
+        sometimes 5, 14, 33, 52 is in metalloids,
+        */
+        5 through 8,
+        14 through 16, 
+        33, 34, 52
+    ]
+    halogen = [
+        all of group17
+    ]
+
+    nobleGas = [
+        all of group18
+    ]
+
+]
+
+semimetals = [
+    semimetal = [
+        5, 
+        14, 
+        32, 33, 
+        51, 52, 
+        85          // 85 is sometimes listed as a metalloid, halogen, and semimetal
+    ]
+]
+

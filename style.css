@@ -1,0 +1,73 @@
+body {
+    width: 99%;
+    margin: 0 auto;
+}
+
+table{
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid green;
+}
+
+th {
+    width: 25%;
+    height: 60px;
+    border: 1px solid black;
+}
+
+tr {
+    width: auto;
+    border: 1px solid black;
+}
+
+td {
+    width: 25%;
+    height: 30px;   
+}
+
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}   /* credit: https://www.w3schools.com/howto/howto_css_table_zebra.asp */
+
+thead {
+    height:70px;
+    border: 1px solid black;
+}
+
+.tableBody{
+    height: 100px;
+    width: 100%;
+    float: right;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.searchBox {
+    width: 45%;
+    float: right;
+    margin: 1%;
+    border: 1px solid black;
+}
+
+.container {
+    width: 45%;
+    height: 600px;
+    margin: 1%;
+    float: right;
+    overflow-y: auto;
+    overflow-x: auto;
+    border: 1px solid black;
+}
+
+.titleSection {
+    text-align: center;
+}
+
+section {
+    margin: 10px;
+}
+
+.formBox {
+    margin-left: 85px;
+}
