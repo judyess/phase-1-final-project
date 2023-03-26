@@ -1,4 +1,15 @@
+// On page refresh I now get a warning about resubmitting data. Why? Get rid of that.
+// 
+/*
+Need to add event listeners: I can add event listeners to the tableheaders, so when clicked
+they show the elements in ascending or descending order of that property. 
 
+Allow partial match search results for element names. 
+    return all results for elements whose name contains the text at all.
+      the order of the results will be displayed by:
+        The sooner the substring is found in their name.
+(can I get this to update automatically as the user types more?)
+*/
 // ---------------------------------------------------------
 
 async function fetchElements() {
@@ -9,6 +20,8 @@ async function fetchElements() {
 }
 
 
+// Function has to refer to the HTML table headers <th> id values 
+// to know what element properties to show in which column.
 
 function renderElements(elements) {
   
@@ -18,46 +31,15 @@ function renderElements(elements) {
     const tr = document.createElement('tr');
     tr.setAttribute('class', 'rowData');
     tableBody.appendChild(tr);
-    /*
-    const td1 = document.createElement('td');
-    const td2 = document.createElement('td');
-    const td3 = document.createElement('td');
-    const td4 = document.createElement('td');
 
-    td1.innerHTML = element.number;
-    td2.innerHTML = element.name;
-    td3.innerHTML = element.abbreviation;
-    td4.innerHTML = element.atomicMass;
-
-    
-    tr.appendChild(td1);
-    tr.appendChild(td2);
-    tr.appendChild(td3);
-    tr.appendChild(td4);
-    */
-
-    // I want to rewrite the above as a loop to create rows of data based on the number of tblheaders
-    /*
-    for each element, create a row.
-      for each tableHeader, create a column of data, 
-        const td = document.createElement('td');
-          populate that column of data with element.key, where key is whatever the tableHeaders ID is
-        let key = tableHeader.attr("id");
-        td.innerHTML = element.
-        
-
-  
-    */
     const headers = document.getElementsByClassName("tblHeader");
     
-    for(let i = 0; i < headers.length; i++){
-  
+    for(let i = 0; i < headers.length; i++){ 
       let td = document.createElement("td");
       let key = headers[i].getAttribute('id');
       tr.appendChild(td);
       td.innerHTML = element[`${key}`]; 
     }
-
   });
 }
 
@@ -69,12 +51,17 @@ function clearTable() {
   }
 }
 
+// the submit button for the chemical equations does the same thing 
+// because of the eventlistener on the filterForm, which basically refreshes the page
+function seeAll() {
+  clearTable(); 
+  fetchElements();
+}
+
 // When the page loads, populates the table with data from db.json
 document.addEventListener('DOMContentLoaded', function() {
   fetchElements();
 });
-
-
 
 let filteredElements = [];   
 let searchBoxText;
@@ -83,6 +70,7 @@ let option = "number";
 
 // abbreviation searches are case sensitive.
 function filter(opt){
+    clearTable(); 
     let searchText = document.getElementById("searchText");
     searchBoxText = searchText.value;  
 
@@ -109,23 +97,6 @@ function filter(opt){
       };
   
   
-
-
-
-
-/*  Commented out to test filter() function. May not need this one.
-
-let searchBoxText;
-function getform(){
-
-    let searchText = document.getElementById("searchText");
-    searchBoxText = searchText.value;  
-    alert("you wrote: " + searchBoxText);
-    
-}
-*/
-
-// Gets dropdown menu selection
 
 //let option = "Number";
 function menuHandler(){

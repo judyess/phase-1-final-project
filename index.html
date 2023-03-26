@@ -1,57 +1,95 @@
 <!DOCTYPE html>
-<!-- Create a table to display all elements that updates as the user selects a filter-->
+
+<!-- Maybe find a way to generate table headers automatically instead of hardcoding them in.-->
 
 <html>
     <head>
-        <link rel="stylesheet" href='style.css' />
-        <script src="index.js"></script>
+        <link href="style.css" type="text/css" rel="stylesheet">
+        
     </head>
-
     <body>
-        <a href="tables.html">Tables</a>
-        <div>
-            <!-- NON-FUNCTIONAL FORMS from my examples-->
-                <!--TEXTBOX-->
-            <p>UN:
-                <input type="text" name="username" size="15" maxlength="8" />
-            </p>
-                <!--DROPDOWN MENU-->
-            <p> Dropdown Menu: <br />
-                <select name="preference">
-                    <option value="fruits">fruits</option>
-                    <option value="vegetables">vegetables</option>
-                    <option value="meat">meat</option>
-                </select>
-            </p>
-            <!-- ------------------------------- -->
-
-            <!-- FUNCTIONAL from my examples, see function in index.js-->
-            <form onsubmit="getform()" method="get">
-                <!--TEXTBOX-->
-                <p>Text:
-                    <input type="text" id="txtbox" name="comment" size="15" maxlength="8" />
-                </p>
-                <!--Submit button sends the form to the server specified in the form's "action" attribute, which currently just points to the home page-->
-                <input type="submit" name="credentials" value="login to your account or whatever" />
-                <button id="button">Clickity</button>
-            </form>
-            <!-- ------------------------------- -->
-
-
-
-            <!-- sample_form.html from "phase-1-sending-data-with-fetch"-->
-            <!-- This form allowed the user to create new dog entries in db.json-->
-            <!-- Does this post to db.json without using a JS function? I don't see any references to functions for it-->
-            <body>
-                <h1>Sample Form</h1>
-                <form action="http://localhost:3000/dogs" method="POST">
-                  <label> Dog Name: <input type="text" name="dogName" id="dogName" /></label><br />
-                  <label> Dog Breed: <input type="text" name="dogBreed" id="dogBreed" /></label><br />
-                  <input type="submit" id="submit" value="Submit" />
-                </form>
-            
-              </body>
-
+        <div class="titleSection">
+            <a href="index.html">Home</a>
+            <h2>CHEM TRAILS</h2>
         </div>
+        
+
+        <div class="tableContainer">
+            <!--WHERE ELEMENTS ARE RENDERED FROM db.json and HTML elements are created-->
+        <table class="tableBody" id="mainTable">
+            <!--Row 1 (table headers)-->
+            <thead>
+            <tr>
+                <!--column headers-->
+                <th class="tblHeader" id="number">Number</th>
+                <th class="tblHeader" id="name">Name</th>
+                <th class="tblHeader" id="abbreviation">Abbreviation</th>
+                <th class="tblHeader" id="atomicMass">Atomic Mass</th>
+                <th class="tblHeader" id="period">Period</th>
+            </tr>
+            </thead>         
+            <tbody></tbody>
+        </table>
+        </div>
+
+        <div class="searchBox">
+            <h4>To do:</h4>
+            <li>Attach drop down search box to the text-input search box. 
+            </li>
+            <li>Maybe add function to create groups or to parse chemical formulas.
+            </li>
+            <li> Make table entries clickable or add checkboxes</li>
+            <li> Equation: ideal gas law, find number of moles</li>
+
+
+            </li>
+
+
+                        <!-- FROM phase-1-fetch-on-demand-with-forms -->
+            <section>
+                <form id="filterForm" onsubmit="filter(`${option}`)" method="get">
+                    <label for="searchByID">Search By: </label>
+
+                    <!-- Filter options dropdown menu-->
+                    <select id="searchBy" onchange="menuHandler()">
+                        <option value="number">Number</option>
+                        <option value="name">Name</option>
+                        <option value="abbreviation">Abbreviation</option>
+                        <option value="atomicMass">Atomic Mass</option>
+                    </select>
+
+                    <!-- Search box by dropdown menu selection-->
+                    <input id="searchText" type="text" placeholder="text"/>
+                    <input type="submit" />
+
+
+
+                </form>
+            </section>
+
+            <!-- Displays drop down menu selection here-->
+            <p> You selected: 
+                <span class="output"></span>
+            </p>
+
+            
+            <section class="formBox">
+                
+                <form id="form2" onsubmit="clearTable()">
+                    
+                    <input id="parser" type="text" placeholder="chemical equation"/>
+                    <input type="submit" />
+                    
+                
+                </form>
+                <button onclick="clearTable()">Clear Table</button>
+                <button onclick="seeAll()">See All</button>
+                
+            </section>
+
+
+            
+        </div>
+        <script type="text/javascript" src="index.js"></script> 
     </body>
 </html>

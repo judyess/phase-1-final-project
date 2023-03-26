@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- Create a table to display all elements that updates as the user selects a filter-->
+
+<html>
+    <head>
+        <link rel="stylesheet" href='style.css' />
+        <script src="index.js"></script>
+    </head>
+
+    <body>
+        <a href="tables.html">Tables</a>
+        <div>
+            <!-- NON-FUNCTIONAL FORMS from my examples-->
+                <!--TEXTBOX-->
+            <p>UN:
+                <input type="text" name="username" size="15" maxlength="8" />
+            </p>
+                <!--DROPDOWN MENU-->
+            <p> Dropdown Menu: <br />
+                <select name="preference">
+                    <option value="fruits">fruits</option>
+                    <option value="vegetables">vegetables</option>
+                    <option value="meat">meat</option>
+                </select>
+            </p>
+            <!-- ------------------------------- -->
+
+            <!-- FUNCTIONAL from my examples, see function in index.js-->
+            <form onsubmit="getform()" method="get">
+                <!--TEXTBOX-->
+                <p>Text:
+                    <input type="text" id="txtbox" name="comment" size="15" maxlength="8" />
+                </p>
+                <!--Submit button sends the form to the server specified in the form's "action" attribute, which currently just points to the home page-->
+                <input type="submit" name="credentials" value="login to your account or whatever" />
+                <button id="button">Clickity</button>
+            </form>
+            <!-- ------------------------------- -->
+
+
+
+            <!-- sample_form.html from "phase-1-sending-data-with-fetch"-->
+            <!-- This form allowed the user to create new dog entries in db.json-->
+            <!-- Does this post to db.json without using a JS function? I don't see any references to functions for it-->
+            <body>
+                <h1>Sample Form</h1>
+                <form action="http://localhost:3000/dogs" method="POST">
+                  <label> Dog Name: <input type="text" name="dogName" id="dogName" /></label><br />
+                  <label> Dog Breed: <input type="text" name="dogBreed" id="dogBreed" /></label><br />
+                  <input type="submit" id="submit" value="Submit" />
+                </form>
+            
+              </body>
+
+        </div>
+    </body>
+</html>

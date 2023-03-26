@@ -4,20 +4,18 @@ body {
 }
 
 
-
 th {
-    width: 60px;
+    width: 120px;
     height: 60px;
     border: 1px solid black;
 }
 
 tr {
-    width: 100%;
     border: 1px solid black;
 }
 
 td {
-    width: 60px;
+    width: 120px;
     height: 30px;   
 }
 
@@ -27,11 +25,10 @@ tr:nth-child(even) {
 }   /* credit: https://www.w3schools.com/howto/howto_css_table_zebra.asp */
 
 thead {
-    width: auto;
+    width: 100%;
     height:70px;
     border: 1px solid black;
 }
-
 
 
 .searchBox {
@@ -55,10 +52,9 @@ thead {
 table{
     text-align: center;
     width: 100%;
-    height: 100px;
+    height: auto;
     overflow-y: auto;
-    overflow-x: scroll;
-    
+    overflow-x: scroll;   
 }
 
 .titleSection {
