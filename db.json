@@ -5,14 +5,16 @@
       "name": "Hydrogen",
       "abbreviation": "H",
       "atomicMass": 1.0079,
-      "id": 1
+      "id": 1,
+      "period": 1
     },
     {
       "number": 2,
       "name": "Helium",
       "abbreviation": "He",
       "atomicMass": 4.0026,
-      "id": 2
+      "id": 2,
+      "period": 1
     },
     {
       "number": 3,

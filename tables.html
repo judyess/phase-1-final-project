@@ -12,17 +12,18 @@
         </div>
         
 
-        <div class="container">
+        <div class="tableContainer">
             <!--WHERE ELEMENTS ARE RENDERED FROM db.json and HTML elements are created-->
-        <table class="tableBody">
+        <table class="tableBody" id="mainTable">
             <!--Row 1 (table headers)-->
             <thead>
             <tr>
                 <!--column headers-->
-                <th>Number</th>
-                <th>Name</th>
-                <th>Abbreviation</th>
-                <th>Atomic Mass</th>
+                <th class="tblHeader" id="number">Number</th>
+                <th class="tblHeader" id="name">Name</th>
+                <th class="tblHeader" id="abbreviation">Abbreviation</th>
+                <th class="tblHeader" id="atomicMass">Atomic Mass</th>
+                <th class="tblHeader" id="period">Period</th>
             </tr>
             </thead>         
             <tbody></tbody>
@@ -44,15 +45,15 @@
 
                         <!-- FROM phase-1-fetch-on-demand-with-forms -->
             <section>
-                <form id="filterForm" onsubmit="filter()" method="get">
+                <form id="filterForm" onsubmit="filter(`${option}`)" method="get">
                     <label for="searchByID">Search By: </label>
 
                     <!-- Filter options dropdown menu-->
                     <select id="searchBy" onchange="menuHandler()">
-                        <option value="Number">Number</option>
-                        <option value="Name">Name</option>
-                        <option value="Abbreviation">Abbreviation</option>
-                        <option value="AtomicMass">Atomic Mass</option>
+                        <option value="number">Number</option>
+                        <option value="name">Name</option>
+                        <option value="abbreviation">Abbreviation</option>
+                        <option value="atomicMass">Atomic Mass</option>
                     </select>
 
                     <!-- Search box by dropdown menu selection-->
@@ -69,11 +70,18 @@
                 <span class="output"></span>
             </p>
 
+            
             <section class="formBox">
-                <input id="parser" type="text" placeholder="chemical equation"/>
-                <!--
-                <input type="Submit"/>
-                -->
+                
+                <form id="form2" onsubmit="clearTable()">
+                    
+                    <input id="parser" type="text" placeholder="chemical equation"/>
+                    <input type="submit" />
+                    
+                
+                </form>
+                <button onclick="clearTable()">Clear Table</button>
+                
             </section>
 
 
