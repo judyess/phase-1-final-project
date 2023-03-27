@@ -68,3 +68,7 @@ section {
 .formBox {
     margin-left: 85px;
 }
+
+.numberBox {
+    width: 40px;
+}

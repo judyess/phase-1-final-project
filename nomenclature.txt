@@ -31,3 +31,7 @@ Except when the compound contains oxygen and a halogen, the name of the halogen 
 
 
 (category: Has Polyatomic ions)
+1. Compounds containing polyatomic ions are named similarly to those containing only monatomic ions, except there is no need to change to an –ide ending,
+ since the suffix is already present in the name of the anion
+
+ 
