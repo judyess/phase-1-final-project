@@ -123,41 +123,13 @@ filterOption.addEventListener("change", function() {
 });
 
 
-// try to write event listeners for all table headers without hardcoding them in.
+
 let tblHeaders = document.getElementsByClassName('tblHeader');
 for(let i = 0; i < tblHeaders.length; i++){
-  console.log(tblHeaders[i]);
+  tblHeaders[i].addEventListener('click', function(){
+    console.log(tblHeaders[i].getAttribute('id'));
+  })
 }
-
-let numberHeader = document.querySelector('.tblHeader#number'); 
-numberHeader.addEventListener('click', function(){
-  let key = numberHeader.getAttribute('id');
-  console.log(key);
-});
-
-let nameHeader = document.querySelector('.tblHeader#name');  
-nameHeader.addEventListener('click', function(){
-  let key = nameHeader.getAttribute('id');
-  console.log(key);
-});
-
-let abbreviationHeader = document.querySelector('.tblHeader#abbreviation');  
-abbreviationHeader.addEventListener('click', function(){
-  let key = abbreviationHeader.getAttribute('id');
-  console.log(key);
-});
-
-let atomicMassHeader = document.querySelector('.tblHeader#atomicMass');  
-atomicMassHeader.addEventListener('click', function(){
-  let key = atomicMassHeader.getAttribute('id');
-  console.log(key);
-});
-
-let periodHeader = document.querySelector('.tblHeader#period');  
-periodHeader.addEventListener('click', function(){
-  let key = periodHeader.getAttribute('id');
-  console.log(key);
-});
 
 
 var form=document.getElementById("filterForm");
