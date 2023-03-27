@@ -14,21 +14,23 @@ Allow partial match search results for element names.
 
 // Variables
 let filteredElements = [];   
-let lookUp = "number"; // default option because that's the first one in the list. Harcoded, change this.
+let lookUp = null; // default option because that's the first one in the list. Harcoded, change this.
 let inRange = [];
 let rangeStart = document.querySelector('#startValue');
 let rangeEnd = document.querySelector('#endValue');
 let filterRangeBy = null;
+let output = document.querySelector('.output');
 
 
-
-// When the page loads, populates the table with data from db.json. // Be able to explain why I need the DOMContentLoaded first before I fetch the elements.
+// Have to wait for the page to load  
+// because renderElements() builds the table body 
+// from information about the HTML elements which need to exist first.
 document.addEventListener('DOMContentLoaded', function() {
   fetchElements();
 });
 
+
 async function fetchElements() {
-  
   const res = await fetch("http://localhost:3000/elements");
     const elements = await res.json();
     return renderElements(elements);  
@@ -56,29 +58,12 @@ function renderElements(elements) {
   });
 }
 
-function clearTable() {
-  const rows = document.getElementsByClassName('rowData');
-  let size = rows.length;
-  for(let i =0; i< size; i++){
-    rows[0].remove();
-  }
-}
 
-// the submit button for the chemical equations does the same thing 
-// because of the eventlistener on the form2, which basically refreshes the page, bc prevent default wasn't attached to it.
-function seeAll() {
-  clearTable(); 
-  fetchElements();
-}
 
 // abbreviation searches are case sensitive.
-function filter(opt){
-    clearTable(); 
-    
-    let key = `${opt}`;
-    let output = document.querySelector('.output');
+function filter(){ 
+    let key = lookUp; 
     output.textContent = "";
-
 
       fetch(`http://localhost:3000/elements/`)
         .then((response) => response.json())
@@ -89,60 +74,92 @@ function filter(opt){
               filteredElements.push(data[i]);               
               match = true;
             }         
-          }  
-          renderElements(filteredElements);  // Have to render this inside the fetch to have the filtered elements appear. idk why?
-          filteredElements = []; // clears the array so filtered elements don't get rerendered again.
+          } 
           if(match===false){
             output.textContent = "No Match Found";
+          } else {
+          clearTable();
+          // why do I have to handle the data I get from the fetch inside the fetch?
+          renderElements(filteredElements); 
+          filteredElements = []; 
           }
-        
         });
-
-
       };
-  
-  
 
 
-function searchHandler(){
-  lookUp = document.querySelector('#searchBy').value;
-  filterRangeBy = document.querySelector('#rangeType').value;
-  
-  console.log(lookUp);
-
+function clearTable() {
+  const rows = document.getElementsByClassName('rowData');
+  let size = rows.length;
+  for(let i =0; i< size; i++){
+    rows[0].remove();
+  }
 }
 
-function rangeHandler(){
-  lookUp = document.querySelector('#searchBy').value;
-  filterRangeBy = document.querySelector('#rangeType').value;
-  
-  console.log(filterRangeBy);
-
+function seeAll() {
+  clearTable(); 
+  fetchElements();
 }
 
-let filterOption = document.querySelector('#searchBy');
-filterOption.addEventListener("change", function() {
-      searchHandler();
-  
-});
 
-let selectRangeType = document.querySelector('#rangeType');
-filterOption.addEventListener("change", function() {
-      rangeHandler();
-  
-});
+/*
+Event Listeners/page activity handlers
+*/
 
 
-
-var form=document.getElementById("filterForm");
-//var form2 = document.getElementById("form2");
-
-// Stop page from refreshing
-// Be able to explain why I want to prevent the default submit behavior. (So the page doesn't reload, but why?)
+// by default submitting forms causes the page to reload, if I don't prevent this from happening
+// then things I try to display inside HTML elements will immediately disappear when the page reloads.
 function submitForm(event){
    event.preventDefault();
 }
 
-// lists for a submit event on the filterForm only
+let filterOption = document.querySelector('#searchBy');
+filterOption.addEventListener("change", function() {
+  lookUp = document.querySelector('#searchBy').value;
+});
+
+let selectRangeType = document.querySelector('#rangeType');
+filterOption.addEventListener("change", function() {
+  filterRangeBy = document.querySelector('#rangeType').value;  
+});
+
+
+// try to write event listeners for all table headers without hardcoding them in.
+let tblHeaders = document.getElementsByClassName('tblHeader');
+for(let i = 0; i < tblHeaders.length; i++){
+  console.log(tblHeaders[i]);
+}
+
+let numberHeader = document.querySelector('.tblHeader#number'); 
+numberHeader.addEventListener('click', function(){
+  let key = numberHeader.getAttribute('id');
+  console.log(key);
+});
+
+let nameHeader = document.querySelector('.tblHeader#name');  
+nameHeader.addEventListener('click', function(){
+  let key = nameHeader.getAttribute('id');
+  console.log(key);
+});
+
+let abbreviationHeader = document.querySelector('.tblHeader#abbreviation');  
+abbreviationHeader.addEventListener('click', function(){
+  let key = abbreviationHeader.getAttribute('id');
+  console.log(key);
+});
+
+let atomicMassHeader = document.querySelector('.tblHeader#atomicMass');  
+atomicMassHeader.addEventListener('click', function(){
+  let key = atomicMassHeader.getAttribute('id');
+  console.log(key);
+});
+
+let periodHeader = document.querySelector('.tblHeader#period');  
+periodHeader.addEventListener('click', function(){
+  let key = periodHeader.getAttribute('id');
+  console.log(key);
+});
+
+
+var form=document.getElementById("filterForm");
 form.addEventListener('submit', submitForm);
-//form2.addEventListener('submit', submitForm);
+

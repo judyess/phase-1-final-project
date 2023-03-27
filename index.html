@@ -38,7 +38,7 @@
 
                         <!-- FROM phase-1-fetch-on-demand-with-forms -->
             <section>
-                <form id="filterForm" onsubmit="filter(`${lookUp}`)" method="get">
+                <form id="filterForm" onsubmit="filter()" method="get">
                     
                     <label for="searchByID">Filter By: </label>
                     
@@ -58,6 +58,7 @@
                     <!-- 'Filter By' options-->
                     <label for="searchByID">Search By: </label>
                     <select id="searchBy">
+                        <option value="default"></option>
                         <option value="number">Number</option>
                         <option value="name">Name</option>
                         <option value="abbreviation">Abbreviation</option>
@@ -81,13 +82,7 @@
             
             <section class="formBox">
                 
-                <form id="form2" onsubmit="clearTable()">
-                    
-                    <input id="parser" type="text" placeholder="chemical equation"/>
-                    <input type="submit" />
-                    
-                
-                </form>
+
                 <button onclick="clearTable()">Clear Table</button>
                 <button onclick="seeAll()">See All</button>
                 
