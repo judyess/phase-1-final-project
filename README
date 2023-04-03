@@ -39,3 +39,14 @@ TO DO:
 
 INSTRUCTIONS:
 in terminal, start the json server >> json-server --watch db.json
+
+
+
+
+README to-do and format:
+Choose a self-explanatory name.
+
+Description:
+This app lets you search through the table of elements by their properties.
+
+The table is populated from 

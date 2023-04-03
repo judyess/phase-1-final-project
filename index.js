@@ -122,15 +122,19 @@ filterOption.addEventListener("change", function() {
   filterRangeBy = document.querySelector('#rangeType').value;  
 });
 
-
-
 let tblHeaders = document.getElementsByClassName('tblHeader');
 for(let i = 0; i < tblHeaders.length; i++){
   tblHeaders[i].addEventListener('click', function(){
     console.log(tblHeaders[i].getAttribute('id'));
+
+    fetch(`http://localhost:3000/elements/`)
+    .then((response) => response.json())
+    .then((data) => {   
+      // reorder elements by property
+      // Need to find out how to compare letters in Javasccript.
+    });
   })
 }
-
 
 var form=document.getElementById("filterForm");
 form.addEventListener('submit', submitForm);

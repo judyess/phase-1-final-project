@@ -1,6 +1,8 @@
 
 Nomeclature for simple compounds.
-"Binary compounds" are compounds that have only 2 elements.
+
+If the compound has metal and nonmetal elements, the first element is the metal followed by the nonmetal. Metals are named first and its name is unchanged.
+
 
 (!)Considerations:
 Is the compound ionic or molecular?
@@ -12,11 +14,7 @@ Is the compound ionic or molecular?
         if it contains hydrogen, does it also contain oxygen?
 
 
-If the compound has metal and nonmetal elements, the first element is the metal followed by the nonmetal. Metals are named first and its name is unchanged.
-
-(!)Rules:
-To organize all the rules, I need to know what categories exist for compounds.
-
+(!)Rules by category:
 
 (category: Binary Covalent Bonds)
 1. The general rule in deciding what element is named first is:
