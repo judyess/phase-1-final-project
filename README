@@ -4,9 +4,6 @@ INSTRUCTIONS:
 in terminal, start the json server >> json-server --watch db.json
 
 
-README to-do and format:
-Choose a self-explanatory name.
-
 Description:
 This app lets you search through the table of elements by their properties. The table is populated by a database created from data stored in the data.txt file.
 
@@ -29,5 +26,7 @@ TO DO:
 
 2. Figure out how to get the horizontal scroll bar in the table to work. 
     Right now, the data just resizes to fit the tableContainer. I want fixed column widths.
+
+3. Make the "filter by ranges" functionable.
 
 --------------

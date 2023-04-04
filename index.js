@@ -81,13 +81,15 @@ filterOption.addEventListener("change", function() {
   lookUp = document.querySelector('#searchBy').value;
 });
 
+
+// This is a part of an incomplete collection of functions thats meant to gather elements within a range
 let selectRangeType = document.querySelector('#rangeType');
 filterOption.addEventListener("change", function() {
   filterRangeBy = document.querySelector('#rangeType').value;  
 });
 
 
-// This is an incomplete function that currently listens for a click on any table header
+// This is an incomplete function that currently only listens for a click on any table header
 let tblHeaders = document.getElementsByClassName('tblHeader');
 for(let i = 0; i < tblHeaders.length; i++){
   tblHeaders[i].addEventListener('click', function(){
