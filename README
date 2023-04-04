@@ -1,46 +1,7 @@
-TO DO:
 
-
-10. create a function that allows the user to remove elements from the table.
-
-11. Finish processing the arrays to update the element objects
-
-12. Create checkboxes so user can choose what properties they want displayed in the table
-
-13. Figure out how to get the horizontal scroll bar in the table to work. 
-    Right now, the data just resizes to fit the tableContainer. I want fixed column widths.
-
-14. add CSS styles for tableHeaders by their id, to set the sizes.
-
------DONE----
-
-1. populate db.json file with elemental data
-    write a function to post data. Call that function on all the data from elements.txt
-
-2. go back and remember how to make an html form, access the form data using javascript, how to organize my html so I can easily style it with CSS. 
-
-3. in tables.html, I havn't connected the html forms to anything yet. Drop down box will determine what the user is searching for in the textbox, so I only have to have one text box, instead of many.
-
-4. Look up how uniform the nomenclature for chemical formulas is so I can decide if I want to write a function to parse chemical equations. Not sure what to do with coefficients and subscripts though. 
-
-9. Also, the first time the filterBy() submit function runs, it doesn't add the element to the table. So this is either because the array is empty when I send it to be rendered and an element is added to it afterward or something about when or where the array is being rendered or populated. Figure it out. I'm so tired.
-
-6. Figure out how to add properties/values to objects in db.json. Start with groups and periods. Write function to add values to a group of elements from array. 
-
-7. Figure out how to use a variable for a property name. i.e. object.variable instead of object.propertyName. Lol, the issue was in the menuHandler, the option values were capitalized but the object keys were not, so it kept not finding anything,
-
-8. Clear the table when doing a filtered search. 
-
-
--------------- 
-
-
---------------
 
 INSTRUCTIONS:
 in terminal, start the json server >> json-server --watch db.json
-
-
 
 
 README to-do and format:
@@ -56,3 +17,17 @@ Notes:
 This project can be further expanded by adding more groups and properties to the elements. See Nomenclature.txt file and data.txt for list of loose grouping structures which are currently very disorganizing.
 
 The table is populated from data in the db.json file. renderElements() builds the table 
+
+
+
+
+Contribute:
+
+TO DO:
+
+1. Finish processing the arrays to update the element objects
+
+2. Figure out how to get the horizontal scroll bar in the table to work. 
+    Right now, the data just resizes to fit the tableContainer. I want fixed column widths.
+
+--------------
