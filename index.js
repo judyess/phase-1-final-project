@@ -1,15 +1,3 @@
-// 
-/*
-Need to add event listeners: I can add event listeners to the tableheaders, so when clicked
-they show the elements in ascending or descending order of that property. 
-
-Allow partial match search results for element names. 
-    return all results for elements whose name contains the text at all.
-      the order of the results will be displayed by:
-        The sooner the substring is found in their name.
-(can I get this to update automatically as the user types more?)
-*/
-
 let filteredElements = [];   
 let lookUp = null; 
 let inRange = [];

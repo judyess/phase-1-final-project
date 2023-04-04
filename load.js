@@ -1,5 +1,5 @@
 // This is the function that would add an element to db.json.
-// That data is in data.txt and is ready to be called with this function named attached.
+// That data is in data.txt and is ready to be called with this function name attached.
 function submitData(number, name, abbreviation, atomicMass) {
     fetch("http://localhost:3000/elements", {
         method: "POST",
