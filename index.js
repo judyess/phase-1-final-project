@@ -98,6 +98,8 @@ filterOption.addEventListener("change", function() {
   filterRangeBy = document.querySelector('#rangeType').value;  
 });
 
+
+// This is an incomplete function that currently listens for a click on any table header
 let tblHeaders = document.getElementsByClassName('tblHeader');
 for(let i = 0; i < tblHeaders.length; i++){
   tblHeaders[i].addEventListener('click', function(){
