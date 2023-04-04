@@ -1,4 +1,3 @@
-// On page refresh I now get a warning about resubmitting data. Why? Get rid of that.
 // 
 /*
 Need to add event listeners: I can add event listeners to the tableheaders, so when clicked
@@ -10,35 +9,24 @@ Allow partial match search results for element names.
         The sooner the substring is found in their name.
 (can I get this to update automatically as the user types more?)
 */
-// ---------------------------------------------------------
 
-// Variables
 let filteredElements = [];   
-let lookUp = null; // default option because that's the first one in the list. Harcoded, change this.
+let lookUp = null; 
 let inRange = [];
 let rangeStart = document.querySelector('#startValue');
 let rangeEnd = document.querySelector('#endValue');
 let filterRangeBy = null;
 let output = document.querySelector('.output');
 
-
-// Have to wait for the page to load  
-// because renderElements() builds the table body 
-// from information about the HTML elements which need to exist first.
 document.addEventListener('DOMContentLoaded', function() {
   fetchElements();
 });
-
 
 async function fetchElements() {
   const res = await fetch("http://localhost:3000/elements");
     const elements = await res.json();
     return renderElements(elements);  
 }
-
-
-// Function has to refer to the HTML table headers <th> id values 
-// to know what element properties to show in which column.
 
 function renderElements(elements) { 
   const tableBody = document.querySelector('.tableBody');
@@ -58,9 +46,6 @@ function renderElements(elements) {
   });
 }
 
-
-
-// abbreviation searches are case sensitive.
 function filter(){ 
     let key = lookUp; 
     output.textContent = "";
@@ -79,13 +64,12 @@ function filter(){
             output.textContent = "No Match Found";
           } else {
           clearTable();
-          // why do I have to handle the data I get from the fetch inside the fetch?
+          
           renderElements(filteredElements); 
           filteredElements = []; 
           }
         });
       };
-
 
 function clearTable() {
   const rows = document.getElementsByClassName('rowData');
@@ -100,14 +84,6 @@ function seeAll() {
   fetchElements();
 }
 
-
-/*
-Event Listeners/page activity handlers
-*/
-
-
-// by default submitting forms causes the page to reload, if I don't prevent this from happening
-// then things I try to display inside HTML elements will immediately disappear when the page reloads.
 function submitForm(event){
    event.preventDefault();
 }

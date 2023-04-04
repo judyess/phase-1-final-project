@@ -1,28 +1,21 @@
 <!DOCTYPE html>
 
-<!-- Maybe find a way to generate table headers automatically instead of hardcoding them in.-->
-
 <html>
     <head>
         <link href="style.css" type="text/css" rel="stylesheet">
-        
     </head>
+
     <body>
         <li><a href="draftPage.html">draftPage</a></li>
         <div class="titleSection">
             <a href="index.html">Home</a>
             <h2>CHEM TRAILS</h2>
-
         </div>
-        
 
         <div class="tableContainer">
-            <!--WHERE ELEMENTS ARE RENDERED FROM db.json and HTML elements are created-->
         <table class="tableBody" id="mainTable">
-            <!--Row 1 (table headers)-->
             <thead>
             <tr>
-                <!--column headers-->
                 <th class="tblHeader" id="number">Number</th>
                 <th class="tblHeader" id="name">Name</th>
                 <th class="tblHeader" id="abbreviation">Abbreviation</th>
@@ -35,27 +28,18 @@
         </div>
 
         <div class="searchBox">
-
-                        <!-- FROM phase-1-fetch-on-demand-with-forms -->
             <section>
                 <form id="filterForm" onsubmit="filter()" method="get">
-                    
                     <label for="searchByID">Filter By: </label>
-                    
-                    <!-- Filter Range-->
                     <select id="rangeType">
                         <option value="default"></option>
                         <option value="number">Number</option>
                         <option value="atomicMass">Atomic Mass</option>
                     </select>
-                    <!-- Range value boxes-->
+
                     <input class="numberBox" id="startValue" type="text" placeholder="start"/>
                     <input class="numberBox" id="endValue" type="text" placeholder="end"/>
                     <p></p>
-                    
-
-                    
-                    <!-- 'Filter By' options-->
                     <label for="searchByID">Search By: </label>
                     <select id="searchBy">
                         <option value="default"></option>
@@ -65,32 +49,22 @@
                         <option value="atomicMass">Atomic Mass</option>
                     </select>
 
-                    <!-- Search box by dropdown menu selection-->
                     <input id="searchText" type="text" placeholder="text"/>
                     <input type="submit" />
-
-                    
-
                 </form>
             </section>
 
-            <!-- Displays drop down menu selection here-->
             <p> Outputs: 
                 <span class="output"></span>
             </p>
 
-            
             <section class="formBox">
-                
-
                 <button onclick="clearTable()">Clear Table</button>
                 <button onclick="seeAll()">See All</button>
-                
             </section>
 
-
-            
         </div>
+
         <script type="text/javascript" src="index.js"></script> 
     </body>
 </html>
