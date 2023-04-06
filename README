@@ -15,12 +15,16 @@ There is a function in load.js to restore the data in db.json to it's original v
 
 Notes:
 This project can be further expanded by adding more groups and properties to the elements. See Nomenclature.txt file and data.txt for list of loose grouping structures which are currently very disorganized.
-To populate db.json, you can run the submitData() function in load.js with the corresponding data in data.txt. The data was removed from load.js because it only needs to be run once but it is saved in data.txt if needed. 
+The functions and data I used to populate db.json is in load.js and data.txt, respectively. Although, I only needed to run submitData() on the base elemental data once, I have kept everything I used here for reference.
+There are additional arrays of data in data.txt which describe elemental groups that are incomplete because upon my research I discovered contradictions about certain elements and which categories they belong in. This may be because there are at least 3 different organizations, (that I've come across) responsible for how these elements are categorized.
 
 
 About The Program:
 
+First the program waits for the DOMContent to load before it calls fetchElements()
 
+fetchElements()
+    is an asynchronous function for no reason at all but why not. It fetches the data stored in db.json and returns a function which 
 
 
 
