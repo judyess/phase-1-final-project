@@ -14,10 +14,13 @@ Directions:
 There is a function in load.js to restore the data in db.json to it's original values if they get changed, and another function below that to add additional properties to the table as desired. The property names must be hard coded into the function body. There are arrays of elements in data.txt, many of which are still in progress that are meant to be used with these functions.
 
 Notes:
-This project can be further expanded by adding more groups and properties to the elements. See Nomenclature.txt file and data.txt for list of loose grouping structures which are currently very disorganizing.
+This project can be further expanded by adding more groups and properties to the elements. See Nomenclature.txt file and data.txt for list of loose grouping structures which are currently very disorganized.
 To populate db.json, you can run the submitData() function in load.js with the corresponding data in data.txt. The data was removed from load.js because it only needs to be run once but it is saved in data.txt if needed. 
 
-The table is populated from data in the db.json file. renderElements() builds the table 
+
+About The Program:
+
+
 
 
 
