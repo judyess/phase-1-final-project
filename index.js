@@ -10,10 +10,12 @@ document.addEventListener('DOMContentLoaded', function() {
   fetchElements();
 });
 
-async function fetchElements() {
-  const res = await fetch("http://localhost:3000/elements");
-    const elements = await res.json();
-    return renderElements(elements);  
+function fetchElements() {
+  fetch("http://localhost:3000/elements")
+  .then((response) => response.json())
+  .then((data) => {
+    return renderElements(data);  
+  })
 }
 
 function renderElements(elements) { 
