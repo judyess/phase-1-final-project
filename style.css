@@ -72,3 +72,7 @@ section {
 .numberBox {
     width: 40px;
 }
+
+.output {
+    float: right;
+}
