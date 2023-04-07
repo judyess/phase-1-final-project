@@ -29,6 +29,7 @@
 
         <div class="searchBox">
             <section>
+                <section hidden="true">
                 <form id="filterForm" onsubmit="filter()" method="get">
                     <label for="searchByID">Filter By: </label>
                     <select id="rangeType">
@@ -36,9 +37,11 @@
                         <option value="number">Number</option>
                         <option value="atomicMass">Atomic Mass</option>
                     </select>
+                
 
                     <input class="numberBox" id="startValue" type="text" placeholder="start"/>
                     <input class="numberBox" id="endValue" type="text" placeholder="end"/>
+                </section>
                     <p></p>
                     <label for="searchByID">Search By: </label>
                     <select id="searchBy">
@@ -54,9 +57,7 @@
                 </form>
             </section>
 
-            <p> Outputs: 
-                <span class="output"></span>
-            </p>
+
 
             <section class="formBox">
                 <button onclick="clearTable()">Clear Table</button>
@@ -64,6 +65,7 @@
             </section>
 
         </div>
+
 
         <script type="text/javascript" src="index.js"></script> 
     </body>
