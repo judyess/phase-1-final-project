@@ -90,7 +90,7 @@ function processArray(arr) {
       for (let i =0; i < data.length; i++){        
         for( let j = 0; j < arr.length; j++){
             if (data[i].number === arr[j]){    
-                addProperty("period", 4, arr[j]); // Must manually update with each array
+                addProperty("period", 5, arr[j]); // Must manually update with each array
             } 
         }               
       }      
@@ -98,7 +98,7 @@ function processArray(arr) {
 }
 
 
-processArray(period4);
+processArray(period5);
 
 
 

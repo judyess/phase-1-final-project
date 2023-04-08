@@ -149,56 +149,64 @@
       "name": "Potassium",
       "abbreviation": "K",
       "atomicMass": 39.0983,
-      "id": 19
+      "id": 19,
+      "period": 4
     },
     {
       "number": 20,
       "name": "Calcium",
       "abbreviation": "Ca",
       "atomicMass": 40.078,
-      "id": 20
+      "id": 20,
+      "period": 4
     },
     {
       "number": 21,
       "name": "Scandium",
       "abbreviation": "Sc",
       "atomicMass": 44.9559,
-      "id": 21
+      "id": 21,
+      "period": 4
     },
     {
       "number": 22,
       "name": "Titanium",
       "abbreviation": "Ti",
       "atomicMass": 47.867,
-      "id": 22
+      "id": 22,
+      "period": 4
     },
     {
       "number": 23,
       "name": "Vanadium",
       "abbreviation": "V",
       "atomicMass": 50.9415,
-      "id": 23
+      "id": 23,
+      "period": 4
     },
     {
       "number": 24,
       "name": "Chromium",
       "abbreviation": "Cr",
       "atomicMass": 51.9961,
-      "id": 24
+      "id": 24,
+      "period": 4
     },
     {
       "number": 25,
       "name": "Manganese",
       "abbreviation": "Mn",
       "atomicMass": 54.938,
-      "id": 25
+      "id": 25,
+      "period": 4
     },
     {
       "number": 26,
       "name": "Iron",
       "abbreviation": "Fe",
       "atomicMass": 55.845,
-      "id": 26
+      "id": 26,
+      "period": 4
     },
     {
       "number": 27,
@@ -268,133 +276,152 @@
       "name": "Krypton",
       "abbreviation": "Kr",
       "atomicMass": 83.8,
-      "id": 36
+      "id": 36,
+      "period": 4
     },
     {
       "number": 37,
       "name": "Rubidium",
       "abbreviation": "Rb",
       "atomicMass": 85.4678,
-      "id": 37
+      "id": 37,
+      "period": 5
     },
     {
       "number": 38,
       "name": "Strontium",
       "abbreviation": "Sr",
       "atomicMass": 87.62,
-      "id": 38
+      "id": 38,
+      "period": 5
     },
     {
       "number": 39,
       "name": "Yttrium",
       "abbreviation": "Y",
       "atomicMass": 88.9059,
-      "id": 39
+      "id": 39,
+      "period": 5
     },
     {
       "number": 40,
       "name": "Zirconium",
       "abbreviation": "Zr",
       "atomicMass": 91.224,
-      "id": 40
+      "id": 40,
+      "period": 5
     },
     {
       "number": 41,
       "name": "Niobium",
       "abbreviation": "Nb",
       "atomicMass": 92.9064,
-      "id": 41
+      "id": 41,
+      "period": 5
     },
     {
       "number": 42,
       "name": "Molybdenum",
       "abbreviation": "Mo",
       "atomicMass": 95.94,
-      "id": 42
+      "id": 42,
+      "period": 5
     },
     {
       "number": 43,
       "name": "Technetium",
       "abbreviation": "Tc",
       "atomicMass": 98,
-      "id": 43
+      "id": 43,
+      "period": 5
     },
     {
       "number": 44,
       "name": "Ruthenium",
       "abbreviation": "Ru",
       "atomicMass": 101.07,
-      "id": 44
+      "id": 44,
+      "period": 5
     },
     {
       "number": 45,
       "name": "Rhodium",
       "abbreviation": "Rh",
       "atomicMass": 102.9055,
-      "id": 45
+      "id": 45,
+      "period": 5
     },
     {
       "number": 46,
       "name": "Palladium",
       "abbreviation": "Pd",
       "atomicMass": 106.42,
-      "id": 46
+      "id": 46,
+      "period": 5
     },
     {
       "number": 47,
       "name": "Silver",
       "abbreviation": "Ag",
       "atomicMass": 107.8682,
-      "id": 47
+      "id": 47,
+      "period": 5
     },
     {
       "number": 48,
       "name": "Cadmium",
       "abbreviation": "Cd",
       "atomicMass": 112.411,
-      "id": 48
+      "id": 48,
+      "period": 5
     },
     {
       "number": 49,
       "name": "Indium",
       "abbreviation": "In",
       "atomicMass": 114.818,
-      "id": 49
+      "id": 49,
+      "period": 5
     },
     {
       "number": 50,
       "name": "Tin",
       "abbreviation": "Sn",
       "atomicMass": 118.71,
-      "id": 50
+      "id": 50,
+      "period": 5
     },
     {
       "number": 51,
       "name": "Antimony",
       "abbreviation": "Sb",
       "atomicMass": 121.76,
-      "id": 51
+      "id": 51,
+      "period": 5
     },
     {
       "number": 52,
       "name": "Tellurium",
       "abbreviation": "Te",
       "atomicMass": 127.6,
-      "id": 52
+      "id": 52,
+      "period": 5
     },
     {
       "number": 53,
       "name": "Iodine",
       "abbreviation": "I",
       "atomicMass": 126.9045,
-      "id": 53
+      "id": 53,
+      "period": 5
     },
     {
       "number": 54,
       "name": "Xenon",
       "abbreviation": "Xe",
       "atomicMass": 131.293,
-      "id": 54
+      "id": 54,
+      "period": 5
     },
     {
       "number": 55,
