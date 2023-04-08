@@ -1,5 +1,5 @@
 
-Description:
+DESCRIPTION:
 This app lets you search through the table of elements by property.
 
 
@@ -22,5 +22,5 @@ Should there be any unwanted changes in db.json, you can copy and run the list a
 data.txt is where you can refer to the propertys of the element objects if they get changed in db.json. Elements are organized into arrays whose names describe the category they belong in. Subarrays represent subcategories.
 
 
-Known Issues:
+KNOWN ISSUES:
 1. Horizontal scroll bar doesn't become active because the table resizes itself to fit the container. This will become a problem as new table headers are added.
