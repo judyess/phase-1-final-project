@@ -82,6 +82,12 @@ filterOption.addEventListener("change", function() {
 });
 
 
+var form=document.getElementById("filterForm");
+form.addEventListener('submit', submitForm);
+
+
+
+
 // This is a part of an incomplete collection of functions thats meant to gather elements within a range
 let selectRangeType = document.querySelector('#rangeType');
 filterOption.addEventListener("change", function() {
@@ -104,6 +110,5 @@ for(let i = 0; i < tblHeaders.length; i++){
   })
 }
 
-var form=document.getElementById("filterForm");
-form.addEventListener('submit', submitForm);
+
 
