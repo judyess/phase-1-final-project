@@ -213,63 +213,72 @@
       "name": "Nickel",
       "abbreviation": "Ni",
       "atomicMass": 58.6934,
-      "id": 27
+      "id": 27,
+      "period": 4
     },
     {
       "number": 28,
       "name": "Cobalt",
       "abbreviation": "Co",
       "atomicMass": 58.9332,
-      "id": 28
+      "id": 28,
+      "period": 4
     },
     {
       "number": 29,
       "name": "Copper",
       "abbreviation": "Cu",
       "atomicMass": 63.546,
-      "id": 29
+      "id": 29,
+      "period": 4
     },
     {
       "number": 30,
       "name": "Zinc",
       "abbreviation": "Zn",
       "atomicMass": 65.39,
-      "id": 30
+      "id": 30,
+      "period": 4
     },
     {
       "number": 31,
       "name": "Gallium",
       "abbreviation": "Ga",
       "atomicMass": 69.723,
-      "id": 31
+      "id": 31,
+      "period": 4
     },
     {
       "number": 32,
       "name": "Germanium",
       "abbreviation": "Ge",
       "atomicMass": 72.64,
-      "id": 32
+      "id": 32,
+      "period": 4
     },
     {
       "number": 33,
       "name": "Arsenic",
       "abbreviation": "As",
       "atomicMass": 74.9216,
-      "id": 33
+      "id": 33,
+      "period": 4
     },
     {
       "number": 34,
       "name": "Selenium",
       "abbreviation": "Se",
       "atomicMass": 78.96,
-      "id": 34
+      "id": 34,
+      "period": 4
     },
     {
       "number": 35,
       "name": "Bromine",
       "abbreviation": "Br",
       "atomicMass": 79.904,
-      "id": 35
+      "id": 35,
+      "period": 4
     },
     {
       "number": 36,

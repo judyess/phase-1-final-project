@@ -57,19 +57,10 @@ function addProperty(propertyName, value, number) {
 }
 
 
-
-let period1 = [
-    1, 2
-]
-let period2 = [
-    3, 4, 5, 6, 7, 8, 9, 10
-]
-let period3 = [
-    11, 12, 13, 14, 15, 16, 17, 18
-]
 let period4 = [
-    19, 20, 21, 22, 23, 24, 25, 26, 36
+    19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36
 ]
+
 let period5 = [
     37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54
 ]
@@ -90,7 +81,7 @@ function processArray(arr) {
       for (let i =0; i < data.length; i++){        
         for( let j = 0; j < arr.length; j++){
             if (data[i].number === arr[j]){    
-                addProperty("period", 5, arr[j]); // Must manually update with each array
+                addProperty("period", 4, arr[j]); // Must manually update with each array
             } 
         }               
       }      
@@ -98,7 +89,7 @@ function processArray(arr) {
 }
 
 
-processArray(period5);
+processArray(period4);
 
 
 
