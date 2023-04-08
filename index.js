@@ -87,7 +87,6 @@ form.addEventListener('submit', submitForm);
 
 
 
-
 // This is a part of an incomplete collection of functions thats meant to gather elements within a range
 let selectRangeType = document.querySelector('#rangeType');
 filterOption.addEventListener("change", function() {
@@ -104,8 +103,7 @@ for(let i = 0; i < tblHeaders.length; i++){
     fetch(`http://localhost:3000/elements/`)
     .then((response) => response.json())
     .then((data) => {   
-      // reorder elements by property
-      // Need to find out how to compare letters in Javasccript.
+      // reorder elements by tblHeader 
     });
   })
 }
