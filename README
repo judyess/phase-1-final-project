@@ -1,43 +1,26 @@
 
+Description:
+This app lets you search through the table of elements by property.
+
 
 INSTRUCTIONS:
-in terminal, start the json server >> json-server --watch db.json
-start a second terminal and run >> explorer.exe index.html
-end the session by hitting CTRL+C in the first terminal
+1. in terminal, start the json server >> json-server --watch db.json
+2. start a second terminal and run >> explorer.exe index.html
+3. end the session by hitting CTRL+C in the first terminal
+
+Adding a Property to the Elements:
+in load.js:
+    processArray() is given an array which contains the atomic numbers of elements that belong to a particular category. Then it searches the elements that already exist in db.json with a GET-Fetch method. For each element in that array, addProperty() is called on it. The property being added and its value is hardcoded into the body of the function and needs to be updated with each new array.
+    See data.txt for elemental information and categories.
+
+    addProperty() is passed an element object, and the categoryType and categoryValue of that array of elements from processArray() then it uses a POST-Fetch method to update that object to include a new property of categoryType:categoryValue.
 
 
+HELP:
+Should there be any unwanted changes in db.json, you can copy and run the list at the end of data.txt.
 
-Description:
-This app lets you search through the table of elements by their properties. The table is populated by a database in db.json
-
-Directions:
-There is a function in load.js to restore the data in db.json to it's original values if they get changed, and another function below that to add additional properties to the table as desired. The property names must be hard coded into the function body. There are arrays of elements in data.txt, many of which are still in progress that are meant to be used with these functions.
-
-Notes:
-This project can be further expanded by adding more groups and properties to the elements. See Nomenclature.txt file and data.txt for list of loose grouping structures which are currently very disorganized.
-The functions and data I used to populate db.json is in load.js and data.txt, respectively. Although, I only needed to run submitData() on the base elemental data once, I have kept everything I used here for reference.
-There are additional arrays of data in data.txt which describe elemental groups that are incomplete because upon my research I discovered contradictions about certain elements and which categories they belong in. This may be because there are at least 3 different organizations, (that I've come across) responsible for how these elements are categorized.
+data.txt is where you can refer to the propertys of the element objects if they get changed in db.json. Elements are organized into arrays whose names describe the category they belong in. Subarrays represent subcategories.
 
 
-About The Program:
-
-First the program waits for the DOMContent to load before it calls fetchElements()
-
-fetchElements()
-    is an asynchronous function for no reason at all but why not. It fetches the data stored in db.json and returns a function which 
-
-
-
-
-Contribute:
-
-TO DO:
-
-1. Finish processing the arrays to update the element objects
-
-2. Figure out how to get the horizontal scroll bar in the table to work. 
-    Right now, the data just resizes to fit the tableContainer. I want fixed column widths.
-
-3. Make the "filter by ranges" functionable.
-
---------------
+Known Issues:
+1. Horizontal scroll bar doesn't become active because the table resizes itself to fit the container. This will become a problem as new table headers are added.
