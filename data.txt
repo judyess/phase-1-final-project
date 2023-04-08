@@ -1,4 +1,8 @@
-
+/*
+Elements are organized into arrays whose names describe the category they belong in. 
+Subarrays represent subcategories.
+Unless noted, the arrays are complete.
+*/
 
 
 group1 = [
