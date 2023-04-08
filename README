@@ -10,10 +10,11 @@ INSTRUCTIONS:
 
 Adding a Property to the Elements:
 in load.js:
-    processArray() is given an array which contains the atomic numbers of elements that belong to a particular category. Then it searches the elements that already exist in db.json with a GET-Fetch method. For each element in that array, addProperty() is called on it. The property being added and its value is hardcoded into the body of the function and needs to be updated with each new array.
-    See data.txt for elemental information and categories.
+processArray() 
+    is given an array which contains the atomic numbers of elements that belong to a particular category. Then it searches the elements that already exist in db.json with a GET-Fetch method. For each element in that array, addProperty() is called on it. The property being added and its value is hardcoded into the body of the function and needs to be updated with each new array. See data.txt for elemental information and categories.
 
-    addProperty() is passed an element object, and the categoryType and categoryValue of that array of elements from processArray() then it uses a POST-Fetch method to update that object to include a new property of categoryType:categoryValue.
+addProperty() 
+    is passed an element object, and the categoryType and categoryValue of that array of elements from processArray() then it uses a POST-Fetch method to update that object to include a new property of categoryType:categoryValue.
 
 
 HELP:
