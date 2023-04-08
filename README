@@ -20,7 +20,7 @@ addProperty()
 
 
 HELP:
-Should there be any unwanted changes in db.json, you can copy and run the list at the end of data.txt.
+Should there be any unwanted changes in db.json, you can copy and run the list at the end of data.txt to repopulate it with basic information and rebuild the table from there.
 
 data.txt is where you can refer to the propertys of the element objects if they get changed in db.json. Elements are organized into arrays whose names describe the category they belong in. Subarrays represent subcategories.
 
