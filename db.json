@@ -437,448 +437,512 @@
       "name": "Cesium",
       "abbreviation": "Cs",
       "atomicMass": 132.9055,
-      "id": 55
+      "id": 55,
+      "period": 6
     },
     {
       "number": 56,
       "name": "Barium",
       "abbreviation": "Ba",
       "atomicMass": 137.327,
-      "id": 56
+      "id": 56,
+      "period": 6
     },
     {
       "number": 57,
       "name": "Lanthanum",
       "abbreviation": "La",
       "atomicMass": 138.9055,
-      "id": 57
+      "id": 57,
+      "period": 6
     },
     {
       "number": 58,
       "name": "Cerium",
       "abbreviation": "Ce",
       "atomicMass": 140.116,
-      "id": 58
+      "id": 58,
+      "period": 6
     },
     {
       "number": 59,
       "name": "Praseodymium",
       "abbreviation": "Pr",
       "atomicMass": 140.9077,
-      "id": 59
+      "id": 59,
+      "period": 6
     },
     {
       "number": 60,
       "name": "Neodymium",
       "abbreviation": "Nd",
       "atomicMass": 144.24,
-      "id": 60
+      "id": 60,
+      "period": 6
     },
     {
       "number": 61,
       "name": "Promethium",
       "abbreviation": "Pm",
       "atomicMass": 145,
-      "id": 61
+      "id": 61,
+      "period": 6
     },
     {
       "number": 62,
       "name": "Samarium",
       "abbreviation": "Sm",
       "atomicMass": 150.36,
-      "id": 62
+      "id": 62,
+      "period": 6
     },
     {
       "number": 63,
       "name": "Europium",
       "abbreviation": "Eu",
       "atomicMass": 151.964,
-      "id": 63
+      "id": 63,
+      "period": 6
     },
     {
       "number": 64,
       "name": "Gadolinium",
       "abbreviation": "Gd",
       "atomicMass": 157.25,
-      "id": 64
+      "id": 64,
+      "period": 6
     },
     {
       "number": 65,
       "name": "Terbium",
       "abbreviation": "Tb",
       "atomicMass": 158.9253,
-      "id": 65
+      "id": 65,
+      "period": 6
     },
     {
       "number": 66,
       "name": "Dysprosium",
       "abbreviation": "Dy",
       "atomicMass": 162.5,
-      "id": 66
+      "id": 66,
+      "period": 6
     },
     {
       "number": 67,
       "name": "Holmium",
       "abbreviation": "Ho",
       "atomicMass": 164.9303,
-      "id": 67
+      "id": 67,
+      "period": 6
     },
     {
       "number": 68,
       "name": "Erbium",
       "abbreviation": "Er",
       "atomicMass": 167.259,
-      "id": 68
+      "id": 68,
+      "period": 6
     },
     {
       "number": 69,
       "name": "Thulium",
       "abbreviation": "Tm",
       "atomicMass": 168.9342,
-      "id": 69
+      "id": 69,
+      "period": 6
     },
     {
       "number": 70,
       "name": "Ytterbium",
       "abbreviation": "Yb",
       "atomicMass": 173.04,
-      "id": 70
+      "id": 70,
+      "period": 6
     },
     {
       "number": 71,
       "name": "Lutetium",
       "abbreviation": "Lu",
       "atomicMass": 174.967,
-      "id": 71
+      "id": 71,
+      "period": 6
     },
     {
       "number": 72,
       "name": "Hafnium",
       "abbreviation": "Hf",
       "atomicMass": 178.49,
-      "id": 72
+      "id": 72,
+      "period": 6
     },
     {
       "number": 73,
       "name": "Tantalum",
       "abbreviation": "Ta",
       "atomicMass": 180.9479,
-      "id": 73
+      "id": 73,
+      "period": 6
     },
     {
       "number": 74,
       "name": "Tungsten",
       "abbreviation": "W",
       "atomicMass": 183.84,
-      "id": 74
+      "id": 74,
+      "period": 6
     },
     {
       "number": 75,
       "name": "Rhenium",
       "abbreviation": "Re",
       "atomicMass": 186.207,
-      "id": 75
+      "id": 75,
+      "period": 6
     },
     {
       "number": 76,
       "name": "Osmium",
       "abbreviation": "Os",
       "atomicMass": 190.23,
-      "id": 76
+      "id": 76,
+      "period": 6
     },
     {
       "number": 77,
       "name": "Iridium",
       "abbreviation": "Ir",
       "atomicMass": 192.217,
-      "id": 77
+      "id": 77,
+      "period": 6
     },
     {
       "number": 78,
       "name": "Platinum",
       "abbreviation": "Pt",
       "atomicMass": 195.078,
-      "id": 78
+      "id": 78,
+      "period": 6
     },
     {
       "number": 79,
       "name": "Gold",
       "abbreviation": "Au",
       "atomicMass": 196.9665,
-      "id": 79
+      "id": 79,
+      "period": 6
     },
     {
       "number": 80,
       "name": "Mercury",
       "abbreviation": "Hg",
       "atomicMass": 200.59,
-      "id": 80
+      "id": 80,
+      "period": 6
     },
     {
       "number": 81,
       "name": "Thallium",
       "abbreviation": "Tl",
       "atomicMass": 204.3833,
-      "id": 81
+      "id": 81,
+      "period": 6
     },
     {
       "number": 82,
       "name": "Lead",
       "abbreviation": "Pb",
       "atomicMass": 207.2,
-      "id": 82
+      "id": 82,
+      "period": 6
     },
     {
       "number": 83,
       "name": "Bismuth",
       "abbreviation": "Bi",
       "atomicMass": 208.9804,
-      "id": 83
+      "id": 83,
+      "period": 6
     },
     {
       "number": 84,
       "name": "Polonium",
       "abbreviation": "Po",
       "atomicMass": 209,
-      "id": 84
+      "id": 84,
+      "period": 6
     },
     {
       "number": 85,
       "name": "Astatine",
       "abbreviation": "At",
       "atomicMass": 210,
-      "id": 85
+      "id": 85,
+      "period": 6
     },
     {
       "number": 86,
       "name": "Radon",
       "abbreviation": "Rn",
       "atomicMass": 222,
-      "id": 86
+      "id": 86,
+      "period": 6
     },
     {
       "number": 87,
       "name": "Francium",
       "abbreviation": "Fr",
       "atomicMass": 223,
-      "id": 87
+      "id": 87,
+      "period": 7
     },
     {
       "number": 88,
       "name": "Radium",
       "abbreviation": "Ra",
       "atomicMass": 226,
-      "id": 88
+      "id": 88,
+      "period": 7
     },
     {
       "number": 89,
       "name": "Actinium",
       "abbreviation": "Ac",
       "atomicMass": 227,
-      "id": 89
+      "id": 89,
+      "period": 7
     },
     {
       "number": 90,
       "name": "Thorium",
       "abbreviation": "Th",
       "atomicMass": 232.0381,
-      "id": 90
+      "id": 90,
+      "period": 7
     },
     {
       "number": 91,
       "name": "Protactinium",
       "abbreviation": "Pa",
       "atomicMass": 231.0359,
-      "id": 91
+      "id": 91,
+      "period": 7
     },
     {
       "number": 92,
       "name": "Uranium",
       "abbreviation": "U",
       "atomicMass": 238.0289,
-      "id": 92
+      "id": 92,
+      "period": 7
     },
     {
       "number": 93,
       "name": "Neptunium",
       "abbreviation": "Np",
       "atomicMass": 237,
-      "id": 93
+      "id": 93,
+      "period": 7
     },
     {
       "number": 94,
       "name": "Plutonium",
       "abbreviation": "Pu",
       "atomicMass": 244,
-      "id": 94
+      "id": 94,
+      "period": 7
     },
     {
       "number": 95,
       "name": "Americium",
       "abbreviation": "Am",
       "atomicMass": 243,
-      "id": 95
+      "id": 95,
+      "period": 7
     },
     {
       "number": 96,
       "name": "Curium",
       "abbreviation": "Cm",
       "atomicMass": 247,
-      "id": 96
+      "id": 96,
+      "period": 7
     },
     {
       "number": 97,
       "name": "Berkelium",
       "abbreviation": "Bk",
       "atomicMass": 247,
-      "id": 97
+      "id": 97,
+      "period": 7
     },
     {
       "number": 98,
       "name": "Californium",
       "abbreviation": "Cf",
       "atomicMass": 251,
-      "id": 98
+      "id": 98,
+      "period": 7
     },
     {
       "number": 99,
       "name": "Einsteinium",
       "abbreviation": "Es",
       "atomicMass": 252,
-      "id": 99
+      "id": 99,
+      "period": 7
     },
     {
       "number": 100,
       "name": "Fermium",
       "abbreviation": "Fm",
       "atomicMass": 257,
-      "id": 100
+      "id": 100,
+      "period": 7
     },
     {
       "number": 101,
       "name": "Mendelevium",
       "abbreviation": "Md",
       "atomicMass": 258,
-      "id": 101
+      "id": 101,
+      "period": 7
     },
     {
       "number": 102,
       "name": "Nobelium",
       "abbreviation": "No",
       "atomicMass": 259,
-      "id": 102
+      "id": 102,
+      "period": 7
     },
     {
       "number": 103,
       "name": "Lawrencium",
       "abbreviation": "Lr",
       "atomicMass": 262,
-      "id": 103
+      "id": 103,
+      "period": 7
     },
     {
       "number": 104,
       "name": "Rutherfordium",
       "abbreviation": "Rf",
       "atomicMass": 261,
-      "id": 104
+      "id": 104,
+      "period": 7
     },
     {
       "number": 105,
       "name": "Dubnium",
       "abbreviation": "Db",
       "atomicMass": 262,
-      "id": 105
+      "id": 105,
+      "period": 7
     },
     {
       "number": 106,
       "name": "Seaborgium",
       "abbreviation": "Sg",
       "atomicMass": 266,
-      "id": 106
+      "id": 106,
+      "period": 7
     },
     {
       "number": 107,
       "name": "Bohrium",
       "abbreviation": "Bh",
       "atomicMass": 264,
-      "id": 107
+      "id": 107,
+      "period": 7
     },
     {
       "number": 108,
       "name": "Hassium",
       "abbreviation": "Hs",
       "atomicMass": 277,
-      "id": 108
+      "id": 108,
+      "period": 7
     },
     {
       "number": 109,
       "name": "Meitnerium",
       "abbreviation": "Mt",
       "atomicMass": 268,
-      "id": 109
+      "id": 109,
+      "period": 7
     },
     {
       "number": 110,
       "name": "Darmstadtium",
       "abbreviation": "Ds",
       "atomicMass": "NULL",
-      "id": 110
+      "id": 110,
+      "period": 7
     },
     {
       "number": 111,
       "name": "Roentgenium",
       "abbreviation": "Rg",
       "atomicMass": 272,
-      "id": 111
+      "id": 111,
+      "period": 7
     },
     {
       "number": 112,
       "name": "Ununbium",
       "abbreviation": "Uub",
       "atomicMass": "NULL",
-      "id": 112
+      "id": 112,
+      "period": 7
     },
     {
       "number": 113,
       "name": "Ununtrium",
       "abbreviation": "Uut",
       "atomicMass": "NULL",
-      "id": 113
+      "id": 113,
+      "period": 7
     },
     {
       "number": 114,
       "name": "Ununquadium",
       "abbreviation": "Uuq",
       "atomicMass": "NULL",
-      "id": 114
+      "id": 114,
+      "period": 7
     },
     {
       "number": 115,
       "name": "Ununpentium",
       "abbreviation": "Uup",
       "atomicMass": "NULL",
-      "id": 115
+      "id": 115,
+      "period": 7
     },
     {
       "number": 116,
       "name": "Ununhexium",
       "abbreviation": "Uuh",
       "atomicMass": "NULL",
-      "id": 116
+      "id": 116,
+      "period": 7
     },
     {
       "number": 117,
       "name": "Ununseptium",
       "abbreviation": "Uus",
       "atomicMass": "NULL",
-      "id": 117
+      "id": 117,
+      "period": 7
     },
     {
       "number": 118,
       "name": "Ununoctium",
       "abbreviation": "Uuo",
       "atomicMass": "NULL",
-      "id": 118
+      "id": 118,
+      "period": 7
     }
   ]
 }

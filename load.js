@@ -57,20 +57,13 @@ function addProperty(propertyName, value, number) {
 }
 
 
-let period4 = [
-    19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36
+let periodLanthanides = [
+    57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71
 ]
 
-let period5 = [
-    37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54
+let periodActinides = [
+    89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103
 ]
-let period6 = [
-    55, 56, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86
-]
-let period7 = [
-    87, 88, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118
-]
-
 
 
 function processArray(arr) {
@@ -81,7 +74,7 @@ function processArray(arr) {
       for (let i =0; i < data.length; i++){        
         for( let j = 0; j < arr.length; j++){
             if (data[i].number === arr[j]){    
-                addProperty("period", 4, arr[j]); // Must manually update with each array
+                addProperty("period", 6, arr[j]); // Must manually update with each array
             } 
         }               
       }      
@@ -89,7 +82,7 @@ function processArray(arr) {
 }
 
 
-processArray(period4);
+processArray(periodLanthanides);
 
 
 
