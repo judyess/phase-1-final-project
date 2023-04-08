@@ -27,11 +27,8 @@ function submitData(number, name, abbreviation, atomicMass) {
 
 
 // function to add a property and value to an element in db.json. 
-// The function returns an error in the console but still updates the element specified by its number.
+// Note that element objects are actually being accessed by their id and not their atomic number. They just happen to be the same.
 function addProperty(propertyName, value, number) {
-    // technically, I am accessing the element by its object ID and not its atomic Number
-    // they just happen to be the same.
-    // but try to figure out how to get to a specific object to update it when this is not the case
     
     fetch(`http://localhost:3000/elements/${number}`, {
         method: "PATCH",
