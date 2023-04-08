@@ -26,7 +26,6 @@ function submitData(number, name, abbreviation, atomicMass) {
 }
 
 
-// function to add a property and value to an element in db.json. 
 // Note that element objects are actually being accessed by their id and not their atomic number. They just happen to be the same.
 function addProperty(propertyName, value, number) {
     
@@ -80,8 +79,3 @@ function processArray(arr) {
 
 
 processArray(periodLanthanides);
-
-
-
-
-
