@@ -1,5 +1,4 @@
-// This is the function that would add an element to db.json.
-// That data is in data.txt and is ready to be called with this function name attached.
+// Use to repopulate db.json
 function submitData(number, name, abbreviation, atomicMass) {
     fetch("http://localhost:3000/elements", {
         method: "POST",
@@ -58,7 +57,6 @@ function addProperty(propertyName, value, number) {
 }
 
 
-// These arrays contain the atomic numbers of the elements that belong to the named period
 
 let period1 = [
     1, 2
@@ -82,8 +80,7 @@ let period7 = [
     87, 88, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118
 ]
 
-// this function takes one of the arrays written above,
-//  and finds the elements that are referenced, then calls addProperty() on them.
+
 
 function processArray(arr) {
     fetch(`http://localhost:3000/elements/`)
@@ -93,15 +90,15 @@ function processArray(arr) {
       for (let i =0; i < data.length; i++){        
         for( let j = 0; j < arr.length; j++){
             if (data[i].number === arr[j]){    
-                addProperty("period", 1, arr[j]); // I have the propertyName and value hard coded. Change this. (!!!)
+                addProperty("period", 4, arr[j]); // Must manually update with each array
             } 
         }               
       }      
     });
 }
 
-// currently takes the array named period1, have to finish going through the other arrays to complete the table
-processArray(period1);
+
+processArray(period4);
 
 
 

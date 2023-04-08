@@ -21,112 +21,128 @@
       "name": "Lithium",
       "abbreviation": "Li",
       "atomicMass": 6.941,
-      "id": 3
+      "id": 3,
+      "period": 2
     },
     {
       "number": 4,
       "name": "Beryllium",
       "abbreviation": "Be",
       "atomicMass": 9.0122,
-      "id": 4
+      "id": 4,
+      "period": 2
     },
     {
       "number": 5,
       "name": "Boron",
       "abbreviation": "B",
       "atomicMass": 10.811,
-      "id": 5
+      "id": 5,
+      "period": 2
     },
     {
       "number": 6,
       "name": "Carbon",
       "abbreviation": "C",
       "atomicMass": 12.0107,
-      "id": 6
+      "id": 6,
+      "period": 2
     },
     {
       "number": 7,
       "name": "Nitrogen",
       "abbreviation": "N",
       "atomicMass": 14.0067,
-      "id": 7
+      "id": 7,
+      "period": 2
     },
     {
       "number": 8,
       "name": "Oxygen",
       "abbreviation": "O",
       "atomicMass": 15.9994,
-      "id": 8
+      "id": 8,
+      "period": 2
     },
     {
       "number": 9,
       "name": "Fluorine",
       "abbreviation": "F",
       "atomicMass": 18.9984,
-      "id": 9
+      "id": 9,
+      "period": 2
     },
     {
       "number": 10,
       "name": "Neon",
       "abbreviation": "Ne",
       "atomicMass": 20.1797,
-      "id": 10
+      "id": 10,
+      "period": 2
     },
     {
       "number": 11,
       "name": "Sodium",
       "abbreviation": "Na",
       "atomicMass": 22.9897,
-      "id": 11
+      "id": 11,
+      "period": 3
     },
     {
       "number": 12,
       "name": "Magnesium",
       "abbreviation": "Mg",
       "atomicMass": 24.305,
-      "id": 12
+      "id": 12,
+      "period": 3
     },
     {
       "number": 13,
       "name": "Aluminum",
       "abbreviation": "Al",
       "atomicMass": 26.9815,
-      "id": 13
+      "id": 13,
+      "period": 3
     },
     {
       "number": 14,
       "name": "Silicon",
       "abbreviation": "Si",
       "atomicMass": 28.0855,
-      "id": 14
+      "id": 14,
+      "period": 3
     },
     {
       "number": 15,
       "name": "Phosphorus",
       "abbreviation": "P",
       "atomicMass": 30.9738,
-      "id": 15
+      "id": 15,
+      "period": 3
     },
     {
       "number": 16,
       "name": "Sulfur",
       "abbreviation": "S",
       "atomicMass": 32.065,
-      "id": 16
+      "id": 16,
+      "period": 3
     },
     {
       "number": 17,
       "name": "Chlorine",
       "abbreviation": "Cl",
       "atomicMass": 35.453,
-      "id": 17
+      "id": 17,
+      "period": 3
     },
     {
       "number": 18,
       "name": "Argon",
       "abbreviation": "Ar",
       "atomicMass": 39.948,
-      "id": 18
+      "id": 18,
+      "period": 3
     },
     {
       "number": 19,
