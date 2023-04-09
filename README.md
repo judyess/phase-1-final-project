@@ -1,5 +1,5 @@
 
-**DESCRIPTION:**
+# DESCRIPTION:
 This app lets you search through the table of elements by property.
 
 
@@ -10,6 +10,7 @@ This app lets you search through the table of elements by property.
 
 
 Functions in load.js are for managing the element objects in db.json.
+
 Adding a property to the Elements:
 
 `processArray()` 
@@ -21,10 +22,12 @@ Adding a property to the Elements:
 
 
 **HELP:**
+
 If needed, you can copy and run the list at the end of data.txt to repopulate an empty db.json file with basic information and rebuild the table from there.
 
-data.txt is where you can refer to the propertys of the element objects if they get changed in db.json. Elements are organized into arrays whose names describe the category they belong in. Subarrays represent subcategories.
+
 
 
 **KNOWN ISSUES:**
+
 1. Horizontal scroll bar never becomes active because the table resizes itself to fit the container. This will become a problem as new table headers are added.
