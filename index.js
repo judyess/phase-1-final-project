@@ -50,30 +50,32 @@ function filter(){
       fetch(`http://localhost:3000/elements/`)
         .then((response) => response.json())
         .then((data) => {
-          
+        
+        // -------------------------------------- Ew.
           let rangeSelected = false;
-
           if(filterRangeBy==='default'){
             start = 0;
             stop = data.length;
           } else {
             rangeSelected = true;
-              if (filterRangeBy ==="number"){
-                {
-                  if(min == null && max != null){
-                    start = 0;
-                    stop = max;
-                  } else if (max == null && min != null){
-                    start = min;
-                    stop = data.length;
-                  } else {
-                    start = min;
-                    stop = max;
-                  }
+              {
+                if (filterRangeBy == "number"){
+                    if(min == null && max != null){
+                      start = 0;
+                      stop = max;
+                    } else if (max == null && min != null){
+                      start = min;
+                      stop = data.length;
+                    } else {
+                      start = min;
+                      stop = max;
+                    }  
+                } else if (filterRangeBy == "atomicMass"){
+                    // ???
                 }
-              } 
+              }
           }
-          
+          //-----------------------------------
 
           let match = false;              
           for (let i = start; i < stop; i++){
@@ -101,6 +103,8 @@ function clearTable() {
   }
 }
 
+
+// See how range filter affects this
 function seeAll() {
   clearTable(); 
   fetchElements();
@@ -147,11 +151,21 @@ for(let i = 0; i < tblHeaders.length; i++){
 
 ** FOR NUMBER RANGE ONLY
 
-for all elements in data
-    if min == null
-      i = 0;
+  range = true or not
+    if yes, 
+      number or atomicMass?
+        if number
+          for all elements in (start < elements < stop) {
+            render(elements)
+          }
 
-    if max == null
+
+        if atomicMass
+          MASS INCREASES WITH NUMBER. >> determine start and stop.
+            [search array from both ends to find start and stop values? Then send back?]
+
+
+    
 
 
 
