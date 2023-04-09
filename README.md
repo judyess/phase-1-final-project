@@ -7,9 +7,9 @@ This app lets you search through the table of elements by property.
 
 
 **INSTRUCTIONS:**
-1. in terminal, start the json server >> json-server --watch db.json
-2. start a second terminal to run >> explorer.exe index.html
-3. end the session by hitting CTRL+C in the first terminal
+1. in terminal, start the json server `>> json-server --watch db.json`
+2. start a second terminal to run `>> explorer.exe index.html`
+3. `CTRL+C` to end the session
 
 
 Functions in load.js are for managing the element objects in db.json.
