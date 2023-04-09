@@ -37,14 +37,27 @@ function renderElements(elements) {
 function filter(){ 
     let key = lookUp; 
     output.textContent = "";
+    
+    let start;
+    let stop;
+
+    
+
     console.log(min);
     console.log(max);
+    console.log(filterRangeBy);
 
       fetch(`http://localhost:3000/elements/`)
         .then((response) => response.json())
-        .then((data) => {   
+        .then((data) => {
+          
+          if(filterRangeBy==='default'){
+            start = 0;
+            stop = data.length;
+          }
+
           let match = false;              
-          for (let i =0; i < data.length; i++){
+          for (let i = start; i < stop; i++){
             if (data[i][`${key}`] == document.getElementById("searchText").value){   
               filteredElements.push(data[i]);               
               match = true;
@@ -111,4 +124,17 @@ for(let i = 0; i < tblHeaders.length; i++){
 }
 
 
+/*
 
+** FOR NUMBER RANGE ONLY
+
+for all elements in data
+    if min == null
+      i = 0;
+
+    if max == null
+
+
+
+
+*/
