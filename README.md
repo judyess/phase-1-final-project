@@ -7,8 +7,8 @@ This app lets you search through the table of elements by property.
 
 
 **INSTRUCTIONS:**
-1. in terminal, start the json server `>> json-server --watch db.json`
-2. start a second terminal to run `>> explorer.exe index.html`
+1. In terminal, start the json server `>> json-server --watch db.json`
+2. Open the app by starting a second terminal and run `>> explorer.exe index.html`
 3. `CTRL+C` to end the session
 
 
