@@ -51,10 +51,29 @@ function filter(){
         .then((response) => response.json())
         .then((data) => {
           
+          let rangeSelected = false;
+
           if(filterRangeBy==='default'){
             start = 0;
             stop = data.length;
+          } else {
+            rangeSelected = true;
+              if (filterRangeBy ==="number"){
+                {
+                  if(min == null && max != null){
+                    start = 0;
+                    stop = max;
+                  } else if (max == null && min != null){
+                    start = min;
+                    stop = data.length;
+                  } else {
+                    start = min;
+                    stop = max;
+                  }
+                }
+              } 
           }
+          
 
           let match = false;              
           for (let i = start; i < stop; i++){
