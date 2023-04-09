@@ -1,8 +1,8 @@
 let filteredElements = [];   
 let lookUp = null; 
 let inRange = [];
-let rangeStart = document.querySelector('#startValue');
-let rangeEnd = document.querySelector('#endValue');
+let min = document.querySelector('#minValue');
+let max = document.querySelector('#maxValue');
 let filterRangeBy = null;
 let output = document.querySelector('.output');
 
@@ -37,6 +37,8 @@ function renderElements(elements) {
 function filter(){ 
     let key = lookUp; 
     output.textContent = "";
+    console.log(min);
+    console.log(max);
 
       fetch(`http://localhost:3000/elements/`)
         .then((response) => response.json())
