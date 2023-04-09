@@ -1,5 +1,8 @@
 
-# DESCRIPTION:
+# The Element Search!
+
+**DESCRIPTION:**
+
 This app lets you search through the table of elements by property.
 
 
