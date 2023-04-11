@@ -27,7 +27,7 @@
 
         <div class="searchBox">
             <section>
-                <section>
+                <section hidden="true">
                 <form id="filterForm" onsubmit="filter()" method="get">
                     <label for="searchByID">Filter By: </label>
                     <select id="rangeType">
@@ -36,8 +36,8 @@
                         <option value="atomicMass">Atomic Mass</option>
                     </select>
                 
-                    <input class="numberBox" id="startValue" type="text" placeholder="start"/>
-                    <input class="numberBox" id="endValue" type="text" placeholder="end"/>
+                    <input class="numberBox" id="minValue" type="text" placeholder="min"/>
+                    <input class="numberBox" id="maxValue" type="text" placeholder="max"/>
                 </section>
                     <p></p>
                     <label for="searchByID">Search By: </label>

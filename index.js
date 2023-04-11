@@ -1,9 +1,5 @@
 let filteredElements = [];   
 let lookUp = null; 
-let inRange = [];
-let min = document.querySelector('#minValue');
-let max = document.querySelector('#maxValue');
-let filterRangeBy = null;
 let output = document.querySelector('.output');
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -37,46 +33,12 @@ function renderElements(elements) {
 function filter(){ 
     let key = lookUp; 
     output.textContent = "";
-    
-    let start;
-    let stop;
-
-    
-
-    console.log(min);
-    console.log(max);
-    console.log(filterRangeBy);
 
       fetch(`http://localhost:3000/elements/`)
         .then((response) => response.json())
         .then((data) => {
-        
-        // -------------------------------------- Ew.
-          let rangeSelected = false;
-          if(filterRangeBy==='default'){
-            start = 0;
-            stop = data.length;
-          } else {
-            rangeSelected = true;
-              {
-                if (filterRangeBy == "number"){
-                    if(min == null && max != null){
-                      start = 0;
-                      stop = max;
-                    } else if (max == null && min != null){
-                      start = min;
-                      stop = data.length;
-                    } else {
-                      start = min;
-                      stop = max;
-                    }  
-                } else if (filterRangeBy == "atomicMass"){
-                    // ???
-                }
-              }
-          }
-          //-----------------------------------
-
+          let start = 0;
+          let stop = data.length;
           let match = false;              
           for (let i = start; i < stop; i++){
             if (data[i][`${key}`] == document.getElementById("searchText").value){   
@@ -103,8 +65,6 @@ function clearTable() {
   }
 }
 
-
-// See how range filter affects this
 function seeAll() {
   clearTable(); 
   fetchElements();
@@ -124,50 +84,3 @@ var form=document.getElementById("filterForm");
 form.addEventListener('submit', submitForm);
 
 
-
-// This is a part of an incomplete collection of functions thats meant to gather elements within a range
-let selectRangeType = document.querySelector('#rangeType');
-filterOption.addEventListener("change", function() {
-  filterRangeBy = document.querySelector('#rangeType').value;  
-});
-
-
-// This is an incomplete function that currently only listens for a click on any table header
-let tblHeaders = document.getElementsByClassName('tblHeader');
-for(let i = 0; i < tblHeaders.length; i++){
-  tblHeaders[i].addEventListener('click', function(){
-    console.log(tblHeaders[i].getAttribute('id'));
-
-    fetch(`http://localhost:3000/elements/`)
-    .then((response) => response.json())
-    .then((data) => {   
-      // reorder elements by tblHeader 
-    });
-  })
-}
-
-
-/*
-
-** FOR NUMBER RANGE ONLY
-
-  range = true or not
-    if yes, 
-      number or atomicMass?
-        if number
-          for all elements in (start < elements < stop) {
-            render(elements)
-          }
-
-
-        if atomicMass
-          MASS INCREASES WITH NUMBER. >> determine start and stop.
-            [search array from both ends to find start and stop values? Then send back?]
-
-
-    
-
-
-
-
-*/

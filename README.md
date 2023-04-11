@@ -12,22 +12,17 @@ This app lets you search through the table of elements by property.
 3. `CTRL+C` to end the session
 
 
-Functions in load.js are for managing the element objects in db.json.
-
-Adding a property to the Elements:
-
-`processArray()` 
-    is given an array which contains the atomic numbers of elements that belong to a particular category. Then it searches the elements that already exist in db.json with a GET-Fetch method. For each element in that array, addProperty() is called on it. The property being added and its value is hardcoded into the body of the function and needs to be updated with each new array. 
-*See data.txt for elemental information and categories.
-
-`addProperty()` 
-    is passed an element object, and the categoryType and categoryValue of that array of elements from processArray() then it uses a POST-Fetch method to update that object to include a new property of categoryType:categoryValue.
 
 
 **HELP:**
 
-If needed, you can copy and run the list at the end of data.txt to repopulate an empty db.json file with basic information and rebuild the table from there.
+If needed, you can copy and run the list at the end of load.js to repopulate an empty db.json file with basic information and rebuild the table from there.
 
+Load.js includes the functions and data that I used to build db.json. 
+
+**Adding a property to the Elements:**
+
+In load.js, use `processArray()` by passing it an array of objects that you want to update properties for. The name of the property and the value is hard coded into the body and needs to be changed manually.
 
 
 
