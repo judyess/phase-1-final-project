@@ -50,7 +50,6 @@ function filter(){
             output.textContent = "No Match Found";
           } else {
           clearTable();
-          
           renderElements(filteredElements); 
           filteredElements = []; 
           }
@@ -79,8 +78,5 @@ filterOption.addEventListener("change", function() {
   lookUp = document.querySelector('#searchBy').value;
 });
 
-
 var form=document.getElementById("filterForm");
 form.addEventListener('submit', submitForm);
-
-
