@@ -1,6 +1,7 @@
 let filteredElements = [];   
 let lookUp = null; 
 let output = document.querySelector('.output');
+let elements = [];
 
 document.addEventListener('DOMContentLoaded', function() {
   fetchElements();
@@ -8,15 +9,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
 async function fetchElements() {
   const res = await fetch("http://localhost:3000/elements");
-    const elements = await res.json();
+    const response = await res.json();
+    elements = response;
     return renderElements(elements);  
 }
 
-function renderElements(elements) { 
+function renderElements(arr=elements) { 
   const tableBody = document.querySelector('.tableBody');
   const headers = document.getElementsByClassName("tblHeader");
 
-  elements.forEach(element => {
+  arr.forEach(element => {
     const tr = document.createElement('tr');
     tr.setAttribute('class', 'rowData');
     tableBody.appendChild(tr);
@@ -33,16 +35,12 @@ function renderElements(elements) {
 function filter(){ 
     let key = lookUp; 
     output.textContent = "";
-
-      fetch(`http://localhost:3000/elements/`)
-        .then((response) => response.json())
-        .then((data) => {
           let start = 0;
-          let stop = data.length;
+          let stop = elements.length;
           let match = false;              
           for (let i = start; i < stop; i++){
-            if (data[i][`${key}`] == document.getElementById("searchText").value){   
-              filteredElements.push(data[i]);               
+            if (elements[i][`${key}`] == document.getElementById("searchText").value){   
+              filteredElements.push(elements[i]);               
               match = true;
             }         
           } 
@@ -53,8 +51,8 @@ function filter(){
           renderElements(filteredElements); 
           filteredElements = []; 
           }
-        });
-      };
+        };
+      
 
 function clearTable() {
   const rows = document.getElementsByClassName('rowData');
@@ -71,6 +69,7 @@ function seeAll() {
 
 function submitForm(event){
    event.preventDefault();
+   filter();
 }
 
 let filterOption = document.querySelector('#searchBy');
@@ -78,5 +77,18 @@ filterOption.addEventListener("change", function() {
   lookUp = document.querySelector('#searchBy').value;
 });
 
-var form=document.getElementById("filterForm");
+const form=document.getElementById("filterForm");
 form.addEventListener('submit', submitForm);
+
+
+document.getElementById("clearTable").addEventListener("click", function(event){
+  event.preventDefault();
+  clearTable();
+})
+
+
+document.getElementById("seeAll").addEventListener("click", function(event){
+  event.preventDefault();
+  seeAll();
+});
+

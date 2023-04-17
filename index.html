@@ -28,7 +28,7 @@
         <div class="searchBox">
             <section>
                 <section hidden="true">
-                <form id="filterForm" onsubmit="filter()" method="get">
+                <form id="filterForm" method="get">
                     <label for="searchByID">Filter By: </label>
                     <select id="rangeType">
                         <option value="default"></option>
@@ -55,9 +55,9 @@
                 <span class="output"></span>
             </section>
 
-            <section class="formBox">
-                <button onclick="clearTable()">Clear Table</button>
-                <button onclick="seeAll()">See All</button>
+            <section id="formBox">
+                <button id="clearTable">Clear Table</button>
+                <button id="seeAll">See All</button>
             </section>
 
         </div>
