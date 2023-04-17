@@ -1,5 +1,5 @@
 let filteredElements = [];   
-let lookUp = null; 
+let option = null; 
 let output = document.querySelector('.output');
 let elements = [];
 
@@ -32,14 +32,13 @@ function renderElements(arr=elements) {
   });
 }
 
-function filter(){ 
-    let key = lookUp; 
+function filterList(){ 
     output.textContent = "";
           let start = 0;
           let stop = elements.length;
           let match = false;              
           for (let i = start; i < stop; i++){
-            if (elements[i][`${key}`] == document.getElementById("searchText").value){   
+            if (elements[i][`${option}`] == document.getElementById("searchText").value){   
               filteredElements.push(elements[i]);               
               match = true;
             }         
@@ -64,21 +63,19 @@ function clearTable() {
 
 function seeAll() {
   clearTable(); 
-  fetchElements();
+  renderElements();
 }
 
-function submitForm(event){
-   event.preventDefault();
-   filter();
-}
 
-let filterOption = document.querySelector('#searchBy');
-filterOption.addEventListener("change", function() {
-  lookUp = document.querySelector('#searchBy').value;
+
+document.querySelector('#searchBy').addEventListener("change", function() {
+  option = document.querySelector('#searchBy').value;
 });
 
-const form=document.getElementById("filterForm");
-form.addEventListener('submit', submitForm);
+document.getElementById("filterForm").addEventListener('submit', function(event){
+  event.preventDefault();
+  filterList();
+});
 
 
 document.getElementById("clearTable").addEventListener("click", function(event){
