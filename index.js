@@ -1,4 +1,3 @@
-let filteredElements = [];   
 let option = null; 
 let output = document.querySelector('.output');
 let elements = [];
@@ -33,6 +32,7 @@ function renderElements(arr=elements) {
 }
 
 function filterList(){ 
+  let filteredElements = [];   
   output.textContent = "";
   let start = 0;
   let stop = elements.length;
@@ -48,7 +48,6 @@ function filterList(){
   } else {
   clearTable();
   renderElements(filteredElements); 
-  filteredElements = []; 
   }
 };
 
