@@ -1,5 +1,4 @@
 let option = null; 
-let output = document.querySelector('.output');
 let elements = [];
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -32,7 +31,8 @@ function renderElements(arr=elements) {
 }
 
 function filterList(){ 
-  let filteredElements = [];   
+  let filteredElements = [];  
+  let output = document.querySelector('.output'); 
   output.textContent = "";
   let start = 0;
   let stop = elements.length;
@@ -85,4 +85,3 @@ document.getElementById("seeAll").addEventListener("click", function(event){
   seeAll();
 });
 
-//test
