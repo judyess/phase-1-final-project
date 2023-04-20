@@ -1,4 +1,4 @@
-let option = null; 
+let option = null; // global because I don't want to call functions when value changes
 let elements = [];
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -9,8 +9,9 @@ async function fetchElements() {
   const res = await fetch("http://localhost:3000/elements");
     const response = await res.json();
     elements = response;
-    return renderElements(elements);  
+    return renderElements();  
 }
+
 
 function renderElements(arr=elements) { 
   const tableBody = document.querySelector('.tableBody');
@@ -21,6 +22,7 @@ function renderElements(arr=elements) {
     tr.setAttribute('class', 'rowData');
     tableBody.appendChild(tr);
 
+    // forEach
     for(let i = 0; i < headers.length; i++){ 
       let td = document.createElement("td");
       let key = headers[i].getAttribute('id');
@@ -30,19 +32,22 @@ function renderElements(arr=elements) {
   });
 }
 
+// use option. 
 function filterList(){ 
   let filteredElements = [];  
   let output = document.querySelector('.output'); 
   output.textContent = "";
-  let start = 0;
-  let stop = elements.length;
-  let match = false;              
-  for (let i = start; i < stop; i++){
+  let match = false; 
+  
+  // forEach or .filter?
+  for (let i = 0; i < elements.length; i++){
     if (elements[i][`${option}`] == document.getElementById("searchText").value){   
       filteredElements.push(elements[i]);               
       match = true;
     }         
   } 
+
+  // if/else okay?
   if(match===false){
     output.textContent = "No Match Found";
   } else {
@@ -54,6 +59,8 @@ function filterList(){
 function clearTable() {
   const rows = document.getElementsByClassName('rowData');
   let size = rows.length;
+
+  // forEach
   for(let i =0; i< size; i++){
     rows[0].remove();
   }
@@ -64,6 +71,7 @@ function seeAll() {
   renderElements();
 }
 
+// get option
 document.querySelector('#searchBy').addEventListener("change", function() {
   option = document.querySelector('#searchBy').value;
 });
